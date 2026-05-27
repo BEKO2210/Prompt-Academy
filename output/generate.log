@@ -1,3 +1,17 @@
 [init] model=phi4:14b target=1000 already_done=704
 [init] built 1080 combos across 90 subjects
 [gen]  705/1000  rate=0.05/s  eta=94.8m  last=full_page/login_signup
+[gen]  706/1000  rate=0.03/s  eta=146.6m  last=component/magnetic_cta_button
+[gen]  707/1000  rate=0.04/s  eta=122.8m  last=layout_pattern/split_screen_scroll
+[gen]  708/1000  rate=0.04/s  eta=111.5m  last=component/3d_tilt_card
+[gen]  709/1000  rate=0.05/s  eta=107.7m  last=page_section/feature_bento
+[gen]  710/1000  rate=0.05/s  eta=105.5m  last=background_effect/cinematic_loader_screen
+[gen]  711/1000  rate=0.05/s  eta=103.4m  last=page_section/video_hero
+[gen]  712/1000  rate=0.05/s  eta=100.7m  last=layout_pattern/horizontal_scroll_section
+[gen]  713/1000  rate=0.05/s  eta=101.2m  last=component/sidebar_drawer
+[gen]  714/1000  rate=0.05/s  eta=101.4m  last=page_section/testimonials_marquee
+[gen]  715/1000  rate=0.05/s  eta=101.2m  last=page_section/stats_counter
+[gen]  716/1000  rate=0.05/s  eta=100.5m  last=full_page/about_page
+[gen]  717/1000  rate=0.05/s  eta=99.0m  last=component/mega_menu
+[gen]  718/1000  rate=0.05/s  eta=97.3m  last=component/tag_chip
+[gen]  719/1000  rate=0.05/s  eta=96.2m  last=background_effect/scroll_progress_bar
