@@ -26,3 +26,12 @@
 [gen]  24/1000  rate=0.06/s  eta=285.4m  last=component/code_snippet_block
 [gen]  25/1000  rate=0.06/s  eta=282.5m  last=full_page/blog_index
 [gen]  26/1000  rate=0.06/s  eta=284.4m  last=component/magnetic_cta_button
+[gen]  27/1000  rate=0.06/s  eta=284.0m  last=component/modal_dialog
+[gen]  28/1000  rate=0.06/s  eta=282.6m  last=full_page/dashboard_app
+[gen]  29/1000  rate=0.06/s  eta=282.8m  last=page_section/feature_bento
+[gen]  30/1000  rate=0.06/s  eta=283.8m  last=full_page/blog_post
+[gen]  31/1000  rate=0.06/s  eta=284.0m  last=layout_pattern/sticky_aside
+[gen]  32/1000  rate=0.06/s  eta=282.8m  last=layout_pattern/masonry_responsive
+[gen]  33/1000  rate=0.06/s  eta=281.8m  last=full_page/404_error_page
+[gen]  34/1000  rate=0.06/s  eta=280.5m  last=component/toast_notification
+[gen]  35/1000  rate=0.06/s  eta=279.2m  last=page_section/product_gallery_3d
