@@ -1,0 +1,13 @@
+# Ephemeral runtime files
+output/generate.pid
+output/*.old
+
+# Editor / OS noise
+.DS_Store
+*.swp
+__pycache__/
+*.pyc
+.venv/
+
+# Lock for the auto-pusher (created by commit-push.sh)
+.git/auto-push.lock

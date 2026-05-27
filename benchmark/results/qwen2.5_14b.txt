@@ -1,0 +1,38 @@
+=== qwen2.5:14b ===
+[HERO] Create a captivating hero section for Neura featuring an expansive 3[1D[K
+3D cityscape at dusk, with deep depth-of-field to highlight towering skyscr[6D[K
+skyscrapers and dynamic parallax layers to simulate atmospheric perspective[11D[K
+perspective. Employ Framer Motion’s useScroll API to trigger camera moves t[1D[K
+that zoom into the center of the scene when the user scrolls down, and util[4D[K
+utilize layoutId for seamless transitions as users navigate through the sit[3D[K
+site. Use animated buttons from 21st.dev for engaging CTA elements.
+
+[FEATURE GRID] Design a feature grid section showcasing Neura's key feature[7D[K
+features with bento grids containing cards that flip to reveal detailed des[3D[K
+descriptions on hover using Framer Motion’s useTransform API to handle card[4D[K
+card animations smoothly and stagger properties for sequential appearance o[1D[K
+of each card. Incorporate subtle gradient backgrounds from 21st.dev and par[3D[K
+particles effects to enhance the overall interactivity.
+
+[TESTIMONIALS] For the testimonials section, craft a sleek and modern layou[5D[K
+layout with marquee elements that glide seamlessly across the screen using [K
+Framer Motion’s AnimatePresence API for dynamic content loading and animate[7D[K
+animated transitions. Each testimonial card should have a hover effect crea[4D[K
+creating a depth of field with blurred backgrounds to highlight text readab[6D[K
+readability.
+
+[PRICING] Implement a pricing section with bento grids displaying different[9D[K
+different subscription plans in vibrant, colorful cards that elevate on scr[3D[K
+scroll using Framer Motion’s spring animations to provide smooth and natura[6D[K
+natural-feeling movements. Ensure the use of gradient backgrounds for a vis[3D[K
+visually appealing look and animated buttons for CTA elements within each c[1D[K
+card.
+
+[FOOTER] Design an engaging footer section with parallax layers featuring s[1D[K
+social media icons that subtly animate into view as users scroll down using[5D[K
+using Framer Motion’s layoutId to manage dynamic content loading. Include s[1D[K
+sleek navbars that smoothly transition between sections, enhancing navigati[8D[K
+navigation experience with minimalistic yet effective design elements from [K
+21st.dev's component library.
+
+

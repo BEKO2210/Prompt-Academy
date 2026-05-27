@@ -1,0 +1,28 @@
+[init] model=phi4:14b target=1000 already_done=0
+[init] built 1080 combos across 90 subjects
+[gen]  1/1000  rate=0.07/s  eta=244.7m  last=component/animated_navbar
+[gen]  2/1000  rate=0.06/s  eta=272.3m  last=component/tooltip_rich
+[gen]  3/1000  rate=0.06/s  eta=281.3m  last=background_effect/scroll_progress_bar
+[gen]  4/1000  rate=0.06/s  eta=281.5m  last=micro_interaction/ripple_click
+[gen]  5/1000  rate=0.06/s  eta=279.1m  last=page_section/interactive_demo
+[gen]  6/1000  rate=0.06/s  eta=274.2m  last=page_section/footer_gradient
+[gen]  7/1000  rate=0.06/s  eta=280.7m  last=micro_interaction/pull_to_refresh
+[gen]  8/1000  rate=0.06/s  eta=282.2m  last=layout_pattern/revealed_on_scroll_lock
+[gen]  9/1000  rate=0.06/s  eta=273.7m  last=page_section/pricing_table
+[gen]  10/1000  rate=0.06/s  eta=274.1m  last=page_section/feature_carousel
+[gen]  11/1000  rate=0.06/s  eta=278.9m  last=page_section/case_study_split
+[gen]  12/1000  rate=0.06/s  eta=282.3m  last=component/breadcrumb_trail
+[gen]  13/1000  rate=0.06/s  eta=281.3m  last=page_section/kinetic_typography_intro
+[gen]  14/1000  rate=0.06/s  eta=278.6m  last=page_section/tabbed_features
+[gen]  15/1000  rate=0.06/s  eta=277.0m  last=page_section/integrations_orbit
+[gen]  16/1000  rate=0.06/s  eta=283.8m  last=full_page/contact_page
+[gen]  17/1000  rate=0.06/s  eta=285.0m  last=background_effect/particle_field
+[gen]  18/1000  rate=0.06/s  eta=283.1m  last=component/animated_form
+[gen]  19/1000  rate=0.06/s  eta=284.1m  last=background_effect/cursor_spotlight
+[gen]  20/1000  rate=0.06/s  eta=284.0m  last=layout_pattern/horizontal_scroll_section
+[gen]  21/1000  rate=0.06/s  eta=285.1m  last=component/tag_chip
+[gen]  22/1000  rate=0.06/s  eta=284.8m  last=page_section/hero
+[gen]  23/1000  rate=0.06/s  eta=284.3m  last=component/pagination
+[gen]  24/1000  rate=0.06/s  eta=285.4m  last=component/code_snippet_block
+[gen]  25/1000  rate=0.06/s  eta=282.5m  last=full_page/blog_index
+[gen]  26/1000  rate=0.06/s  eta=284.4m  last=component/magnetic_cta_button

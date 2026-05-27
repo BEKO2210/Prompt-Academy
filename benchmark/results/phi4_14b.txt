@@ -1,0 +1,60 @@
+=== phi4:14b ===
+[Hero Section]  
+Create a cinematic hero section that introduces "Neura," featuring a dynami[6D[K
+dynamic camera move across an AI-powered cityscape. Implement depth-of-fiel[13D[K
+depth-of-field effects to focus on an animated 3D model of the Neura interf[6D[K
+interface using Framer Motion's `useTransform` for smooth transitions and `[1D[K
+`layoutId` for seamless reordering as users interact with the page. Use 21s[3D[K
+21st.dev gradient backgrounds to enhance visual appeal, combined with a par[3D[K
+parallax effect achieved through staggered animations (`stagger`) and subtl[5D[K
+subtle particle systems that react to cursor movements, providing an intera[6D[K
+interactive feel. The hero should culminate in a call-to-action button styl[4D[K
+styled using animated buttons from 21st.dev, encouraging users to learn mor[3D[K
+more about the AI productivity assistant.
+
+[Feature Grid]  
+Design a feature grid showcasing Neura's capabilities with a cinematic para[4D[K
+parallax scrolling effect where each card rises and descends in layers of d[1D[K
+depth. Utilize Framer Motion's `useScroll` API to tie animations to the scr[3D[K
+scroll position, creating an engaging story as users navigate through featu[5D[K
+features like task automation and personalized analytics. Implement 21st.de[7D[K
+21st.dev cards for structured information delivery, incorporating animated [K
+buttons within each card that spring into action (`spring`) when hovered ov[2D[K
+over, highlighting their functionality. Enhance the grid with subtle lighti[6D[K
+lighting changes across different sections of the page to draw focus dynami[6D[K
+dynamically.
+
+[Testimonial Section]  
+Develop a testimonial section featuring dynamic, scroll-driven storytelling[12D[K
+storytelling using Framer Motion's `AnimatePresence` for smooth entry and e[1D[K
+exit transitions of testimonials as users scroll through them. Use parallax[8D[K
+parallax layers to give depth to background imagery that shifts gently behi[4D[K
+behind each quote, creating an immersive experience. Include marquees from [K
+21st.dev to display continuous user feedback, combined with staggered anima[5D[K
+animations that bring quotes into focus (`useTransform`) as they enter the [K
+viewport. Ensure lighting and shadow effects highlight each testimonial car[3D[K
+card, enhancing readability and engagement.
+
+[Pricing Section]  
+Construct a pricing section with a cinematic reveal using camera movement a[1D[K
+and depth-of-field transitions between different plans offered by Neura. Im[2D[K
+Implement Framer Motion's `layoutId` to smoothly animate plan comparisons a[1D[K
+as users hover over them, allowing for an easy comparison of features and b[1D[K
+benefits. Utilize bento grids from 21st.dev to neatly organize pricing tier[4D[K
+tiers, adding animated buttons within each grid cell that expand (`spring`)[10D[K
+(`spring`) on interaction, providing additional details about each plan. Im[2D[K
+Implement subtle particle effects around selected plans to draw attention a[1D[K
+and create a dynamic interface.
+
+[Footer Section]  
+Design an interactive footer section with cinematic transitions as users sc[2D[K
+scroll past the main content. Use Framer Motion's `useScroll` API combined [K
+with parallax layers that slowly shift beneath static elements such as navi[4D[K
+navigation links from 21st.dev navbars, creating a subtle depth effect. Inc[3D[K
+Incorporate gradient backgrounds to add visual interest and guide the user’[5D[K
+user’s eye towards key actions like signing up or following on social media[5D[K
+media. Ensure smooth transitions (`spring`) for any expanding informational[13D[K
+informational sections within the footer, maintaining consistency with the [K
+rest of the site's animated style.
+
+
