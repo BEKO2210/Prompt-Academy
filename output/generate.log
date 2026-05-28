@@ -283,3 +283,20 @@
 [gen]  985/1000  rate=0.06/s  eta=4.2m  last=full_page/login_signup
 [gen]  986/1000  rate=0.06/s  eta=4.0m  last=component/tooltip_rich
 [gen]  987/1000  rate=0.06/s  eta=3.7m  last=page_section/sticky_sidebar_story
+[gen]  988/1000  rate=0.06/s  eta=3.4m  last=page_section/hero
+[gen]  989/1000  rate=0.06/s  eta=3.1m  last=micro_interaction/hover_3d_tilt
+[gen]  990/1000  rate=0.06/s  eta=2.8m  last=page_section/video_hero
+[gen]  991/1000  rate=0.06/s  eta=2.5m  last=component/command_palette
+[gen]  992/1000  rate=0.06/s  eta=2.3m  last=page_section/interactive_demo
+[gen]  993/1000  rate=0.06/s  eta=2.0m  last=page_section/metric_hero
+[gen]  994/1000  rate=0.06/s  eta=1.7m  last=page_section/stats_counter
+[gen]  995/1000  rate=0.06/s  eta=1.4m  last=layout_pattern/revealed_on_scroll_lock
+[gen]  996/1000  rate=0.06/s  eta=1.1m  last=page_section/hero
+[gen]  997/1000  rate=0.06/s  eta=0.8m  last=component/sidebar_drawer
+[gen]  998/1000  rate=0.06/s  eta=0.6m  last=component/magnetic_cta_button
+[gen]  999/1000  rate=0.06/s  eta=0.3m  last=background_effect/star_field_parallax
+[gen]  1000/1000  rate=0.06/s  eta=0.0m  last=background_effect/scroll_progress_bar
+[done] 1000 prompts -> /home/belkis/Schreibtisch/prompt-forge/output/prompts.json
+[done] categories: {'component': 223, 'background_effect': 112, 'micro_interaction': 110, 'page_section': 334, 'layout_pattern': 89, 'full_page': 132}
+[done] subjects covered: 90 / 90
+[done] subject min/max: 11 / 12

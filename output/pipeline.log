@@ -48,3 +48,55 @@ watching v1 PID=1808531
 [02:09:24] v1 still running, 967 prompts
 [02:11:24] v1 still running, 975 prompts
 [02:13:24] v1 still running, 982 prompts
+[02:15:24] v1 still running, 988 prompts
+[02:17:24] v1 still running, 996 prompts
+v1 process exited at 2026-05-28T02:19:24+02:00
+v1 final count: 1000
+unloading phi4:14b to free memory...
+[?25l[?2026h[?25l[1G[K[?25h[?2026l[2K[1G[?25h------ analyze.py ------
+[analyze] 1000 prompts
+[analyze] 100 forbidden phrases (>= 20 occurrences for trigrams)
+[analyze] embedding via nomic-embed-text...
+  embedded 50/1000  (5.9/s)
+  embedded 100/1000  (11.0/s)
+  embedded 150/1000  (15.5/s)
+  embedded 200/1000  (19.4/s)
+  embedded 250/1000  (22.9/s)
+  embedded 300/1000  (26.0/s)
+  embedded 350/1000  (28.8/s)
+  embedded 400/1000  (31.3/s)
+  embedded 450/1000  (33.6/s)
+  embedded 500/1000  (35.7/s)
+  embedded 550/1000  (37.6/s)
+  embedded 600/1000  (39.4/s)
+  embedded 650/1000  (41.0/s)
+  embedded 700/1000  (42.5/s)
+  embedded 750/1000  (43.9/s)
+  embedded 800/1000  (45.2/s)
+  embedded 850/1000  (46.4/s)
+  embedded 900/1000  (47.5/s)
+  embedded 950/1000  (48.6/s)
+  embedded 1000/1000  (49.6/s)
+[analyze] embedding done in 20.2s
+[done] output/analyze.json
+[stats] avg forbidden/prompt: 7.9
+[stats] prompts with neighbor sim>0.85: 996
+[stats] markdown leak: 3
+unloading nomic-embed-text...
+[?25l[?2026h[?25l[1G[K[?25h[?2026l[2K[1G[?25h------ refine.py (mistral-small3.2) ------
+[refine] model=mistral-small3.2:latest total=1000 already_done=0
+[refine] 1/1000  rate=0.02/s  eta=824.4m
+[refine] 2/1000  rate=0.02/s  eta=728.2m
+[refine] 3/1000  rate=0.03/s  eta=659.9m
+[refine] 4/1000  rate=0.03/s  eta=625.5m
+[refine] 5/1000  rate=0.03/s  eta=620.4m
+[refine] 6/1000  rate=0.03/s  eta=604.0m
+[refine] 7/1000  rate=0.03/s  eta=614.3m
+[refine] 8/1000  rate=0.03/s  eta=617.5m
+[refine] 9/1000  rate=0.03/s  eta=600.5m
+[refine] 10/1000  rate=0.03/s  eta=589.9m
+[refine] 11/1000  rate=0.03/s  eta=611.1m
+[refine] 12/1000  rate=0.03/s  eta=599.3m
+[refine] 13/1000  rate=0.03/s  eta=595.0m
+[refine] 14/1000  rate=0.03/s  eta=588.8m
+[refine] 15/1000  rate=0.03/s  eta=583.2m
