@@ -1067,3 +1067,26 @@ unloading nomic-embed-text...
 [refine] 980/1000  rate=0.03/s  eta=11.2m
 [refine] 981/1000  rate=0.03/s  eta=10.6m
 [refine] 982/1000  rate=0.03/s  eta=10.1m
+[refine] 983/1000  rate=0.03/s  eta=9.5m
+[refine] 984/1000  rate=0.03/s  eta=8.9m
+[refine] 985/1000  rate=0.03/s  eta=8.4m
+[refine] 986/1000  rate=0.03/s  eta=7.8m
+[refine] 987/1000  rate=0.03/s  eta=7.3m
+[refine] 988/1000  rate=0.03/s  eta=6.7m
+[refine] 989/1000  rate=0.03/s  eta=6.1m
+[refine] 990/1000  rate=0.03/s  eta=5.6m
+[refine] 991/1000  rate=0.03/s  eta=5.0m
+[refine] 992/1000  rate=0.03/s  eta=4.5m
+[refine] 993/1000  rate=0.03/s  eta=3.9m
+[refine] 994/1000  rate=0.03/s  eta=3.4m
+[refine] 995/1000  rate=0.03/s  eta=2.8m
+[refine] 996/1000  rate=0.03/s  eta=2.2m
+[refine] 997/1000  rate=0.03/s  eta=1.7m
+[refine] 998/1000  rate=0.03/s  eta=1.1m
+[refine] 999/1000  rate=0.03/s  eta=0.6m
+[refine] 1000/1000  rate=0.03/s  eta=0.0m
+[done] 1000 refined -> output/prompts_v2.json
+------ verify.py ------
+[done] -> output/refine_report.md
+diversity gain: openings 456 → 916, intensifiers 998 → 322, TTR 0.0245 → 0.0454
+============ pipeline finished 2026-05-28T11:39:37+02:00 ============
