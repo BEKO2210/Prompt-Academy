@@ -1,0 +1,788 @@
+[
+  {
+    "id": "00000",
+    "category": "component",
+    "subject": "animated_navbar",
+    "style": "neo_brutalist_typography_meets_glass",
+    "topic": "Nimbus — cloud infrastructure observability",
+    "animation": "stagger reveal of children with spring physics on viewport enter",
+    "prompt": "Build the animated navbar for Nimbus, a cloud infrastructure observability tool, where neo-brutalist typography and glass-like transparency merge with functional clarity. Use Framer Motion's staggerChildren and useSpring to animate a staggered reveal of children with spring physics on viewport entry via useInView, ensuring a tactile sense of depth. The navbar must include an explicit empty state with a placeholder message when no data is available, and the primary interaction—hovering over a menu item—should trigger a subtle highlight effect while maintaining accessibility with keyboard navigation, visible focus rings, ARIA labels, and a prefers-reduced-motion fallback. Implement this locally using React, TypeScript, Tailwind, and Framer Motion, taking 21st.dev’s animated navbar pattern as a visual reference but relying only on documented APIs. Ensure sufficient color contrast and structured UI elements like dropdowns or nested menus that expand predictably on interaction.",
+    "model": "phi4:14b",
+    "generated_at": "2026-05-27T21:35:01.094713+02:00",
+    "prompt_v1": "Create an animated_navbar for Nimbus — a cloud infrastructure observability tool, blending neo-brutalist typography with glass aesthetics. Utilize Framer Motion's AnimatePresence and stagger for children's spring-physics animations upon viewport entry, emphasizing depth through strategic camera moves and layered lighting effects. Integrate this navbar using the 21st.dev animated navbars category, ensuring it functions seamlessly within the React + TypeScript stack. Employ a monospaced sans-serif font paired with bold, muted color palettes to reflect the neo-brutalist theme while maintaining legibility. The animation should activate when the component enters the viewport, offering an immersive introduction that aligns with the product's observability features.",
+    "refine_model": "mistral-small3.2:latest",
+    "refined_at": "2026-05-28T02:21:54.904142+02:00",
+    "prompt_v2": "Build the navigation bar for Nimbus, a cloud infrastructure observability tool, where neo-brutalist typography meets glass-like transparency. Use Framer Motion's AnimatePresence and staggerChildren to create spring-physics-driven animations as elements slide into view, with layered lighting and subtle camera shifts adding dimension. Implement this via 21st.dev’s animated navbar components, ensuring full compatibility with React and TypeScript. Pair a monospaced sans-serif font with muted, bold hues to reinforce the brutalist aesthetic while keeping text sharp. The animations ignite on viewport entry, offering a tactile sense of depth that mirrors Nimbus’s precision.",
+    "functional_requirement": "an explicit empty / zero-data state",
+    "prose_model": "mistral-small3.2:latest",
+    "enriched_at": "2026-05-29T17:15:19.745275+02:00",
+    "spec": {
+      "file": "components/Navbar.tsx",
+      "component_contract": "Navbar(props: { items: MenuItem[], emptyMessage: string }) => JSX.Element",
+      "states": [
+        "isInView: boolean",
+        "We track if the navbar is in view to trigger animations."
+      ],
+      "interaction_trigger": "viewport-enter",
+      "implementation_rules": "Implement locally; no undocumented or external component imports; 21st.dev used as visual reference only.",
+      "accessibility": "Full keyboard navigation with a visible focus ring; ARIA roles/labels for screen readers; prefers-reduced-motion fallback that disables non-essential animation; sufficient colour contrast (WCAG AA). For the dropdown menu, include Escape-to-dismiss and a focus trap.",
+      "responsive_behavior": "At sm: navbar items stack vertically; at md: items are spaced evenly horizontally; at lg: items maintain horizontal spacing with increased padding.",
+      "acceptance_criteria": [
+        "Navbar animates a staggered reveal of children with spring physics on viewport entry.",
+        "Hovering over a menu item triggers a subtle highlight effect without disrupting keyboard navigation.",
+        "Navbar includes an empty state with a placeholder message when no data is available.",
+        "Dropdown menus expand predictably on interaction, with Escape-to-dismiss and focus trap functionality.",
+        "Sufficient color contrast (WCAG AA) is maintained across all UI elements."
+      ]
+    },
+    "spec_model": "qwen2.5-coder:14b",
+    "spec_at": "2026-05-29T17:33:42.796102+02:00"
+  },
+  {
+    "id": "00050",
+    "category": "page_section",
+    "subject": "sticky_sidebar_story",
+    "style": "warm_analog_film_grain",
+    "topic": "Pulse — developer analytics dashboard",
+    "animation": "AnimatePresence morph between two states triggered by hover",
+    "prompt": "Direct a sticky sidebar story for Pulse, a developer analytics dashboard, with inline form validation that displays accessible error messages beneath each field. When a user hovers over data points, an animatePresence morph transforms the sidebar into a detailed view, driven by useTransform to create a smooth, film-like twist. The user sees a clean sans-serif font over a warm-analog-film-grain texture, with keyboard navigation enabled via a visible focus ring and ARIA labels for screen readers. Implement the 21st.dev animated-button pattern locally using React, TypeScript, Tailwind, and Framer Motion, ensuring no undocumented imports. Provide a prefers-reduced-motion fallback that disables non-essential animation while maintaining sufficient color contrast.",
+    "model": "phi4:14b",
+    "generated_at": "2026-05-27T21:49:26.632526+02:00",
+    "prompt_v1": "Build a sticky_sidebar_story section for Pulse's developer analytics dashboard to enhance user engagement with a warm_analog_film_grain visual style. Craft a cinematic experience by layering depth, adjusting lighting to evoke a vintage feel, and incorporating subtle particles reminiscent of film grain. Utilize Framer Motion APIs like AnimatePresence for morph animations between states when the mouse hovers over elements, useTransform for interactive transitions, and stagger to sequence animated elements smoothly. Integrate 21st.dev's glow-cards component category to spotlight key features or data points with a gentle, ethereal highlight effect. Choose typography that pairs clean sans-serif fonts with muted, warm tones to complement the grainy aesthetic, ensuring readability against soft color backgrounds. Trigger animations based on hover interactions, seamlessly morphing content while maintaining an elegant and engaging user journey through the dashboard.",
+    "refine_model": "mistral-small3.2:latest",
+    "refined_at": "2026-05-28T02:50:14.292359+02:00",
+    "prompt_v2": "Direct the viewer’s eye with a sticky-sidebar story for Pulse’s developer analytics dashboard, wrapped in a warm-analog-film-grain texture that hums with retro warmth. Stack layered depth and adjust the glow until the screen feels like aged celluloid, dusted with fleeting particles that mimic film grain. AnimatePresence morphs elements as the mouse hovers, useTransform twists transitions, and stagger queues the sequence so each motion falls like soft rain. Glow-cards from 21st.dev’s library float above the noise, casting an otherworldly highlight on critical data. Set the text in clean sans-serif fonts bathed in muted warmth, crisp against the grainy backdrop. Hover triggers the shift, bending the dashboard into a vintage lens flaring with hidden details.",
+    "functional_requirement": "inline form validation with accessible error messages",
+    "prose_model": "mistral-small3.2:latest",
+    "enriched_at": "2026-05-29T17:16:07.466918+02:00",
+    "spec": {
+      "file": "components/PulseSidebar.tsx",
+      "component_contract": "PulseSidebar({ dataPoints: DataPoint[], formData: FormState })",
+      "states": [
+        "isSidebarExpanded: boolean",
+        "focusedField: string | null"
+      ],
+      "interaction_trigger": "hover over data points",
+      "implementation_rules": "implement locally; no undocumented or external component imports; 21st.dev used as visual reference only",
+      "accessibility": "Full keyboard navigation with a visible focus ring; ARIA roles/labels for screen readers; prefers-reduced-motion fallback that disables non-essential animation; sufficient color contrast (WCAG AA)",
+      "responsive_behavior": "At sm, sidebar sticks to the top and becomes full-width. At md, it sticks to the left and takes up half of the width. At lg, it remains as a fixed sidebar with its original width.",
+      "acceptance_criteria": [
+        "Sidebar expands smoothly on hover over data points",
+        "Inline form validation displays accessible error messages beneath each field",
+        "Keyboard navigation is enabled via a visible focus ring",
+        "ARIA roles/labels are correctly implemented for screen readers",
+        "prefers-reduced-motion fallback disables non-essential animation while maintaining sufficient color contrast"
+      ]
+    },
+    "spec_model": "qwen2.5-coder:14b",
+    "spec_at": "2026-05-29T17:34:23.554144+02:00"
+  },
+  {
+    "id": "00100",
+    "category": "component",
+    "subject": "tooltip_rich",
+    "style": "soft_serif_luxe",
+    "topic": "Halo — a privacy-first password manager",
+    "animation": "mouse-driven 3D tilt with damped spring on the hero artwork",
+    "prompt": "Build a tooltip rich for Halo, the privacy-conscious vault of secrets, where soft serif lettering and opulent flourishes meet precise UI function. The tooltip must display an explicit empty state when no data is available, showing a subtle placeholder with a clear call-to-action that triggers a data-fetching action. Implement keyboard navigation with a visible focus ring, ARIA roles and labels for screen readers, and a prefers-reduced-motion fallback that disables non-essential animation, ensuring accessibility. Animate the hero artwork with a mouse-driven 3D tilt using Framer Motion’s useMotionValue and useSpring APIs, where the spring damping controls the tilt’s responsiveness to cursor movement. The design must locally replicate the 21st.dev animated-button pattern using React, TypeScript, Tailwind, and Framer Motion, adhering strictly to documented APIs while maintaining cinematic visual depth and nuanced lighting. Every interaction, from hover to click, should feel deliberate, balancing aesthetics with clear user flow.",
+    "model": "phi4:14b",
+    "generated_at": "2026-05-27T22:03:25.404892+02:00",
+    "prompt_v1": "Create a reusable UI component named `tooltip_rich` for Halo, a privacy-first password manager. This tooltip features a sophisticated visual style combining soft serif typography and luxurious elements with a mouse-driven 3D tilt animation using damped spring mechanics on the hero artwork. Render depth layering and lighting effects to give the tooltip an immersive experience, utilizing Framer Motion APIs like useTransform, layoutId, and useSpring for smooth animations as the user interacts via hover. Incorporate hover-borders from 21st.dev's component library to enhance user interaction with refined aesthetics. Employ a soft color palette complemented by elegant serif typography to maintain consistency with Halo's luxurious theme, ensuring clarity and engagement when users focus on or click elements.",
+    "refine_model": "mistral-small3.2:latest",
+    "refined_at": "2026-05-28T03:18:04.594367+02:00",
+    "prompt_v2": "Spin a rich tooltip for Halo, the privacy-conscious vault of secrets. Merge soft serif lettering with opulent flourishes, while a mouse-tracked 3D tilt animates the centerpiece using damped spring physics. The tooltip unfolds in stratified depth with nuanced lighting, its dimensions shifting via useTransform, layoutId, and useSpring as hover triggers spring animations. Frame it with 21st.dev’s hover-borders, their delicate glow harmonizing with the muted palette and serif typeface. Ensure every interaction—whether glance or click—feels deliberate, the design’s refinement matching Halo’s discreet elegance.",
+    "functional_requirement": "an explicit empty / zero-data state",
+    "prose_model": "mistral-small3.2:latest",
+    "enriched_at": "2026-05-29T17:17:11.784470+02:00",
+    "spec": {
+      "file": "components/Tooltip.tsx",
+      "component_contract": "Tooltip(props: { content?: string; onFetchData: () => void })",
+      "states": [
+        "isVisible: boolean",
+        "isFetching: boolean"
+      ],
+      "interaction_trigger": "hover",
+      "implementation_rules": "implement locally; no undocumented or external component imports; 21st.dev used as visual reference only",
+      "accessibility": "Full keyboard navigation with a visible focus ring, ARIA roles/labels for screen readers, prefers-reduced-motion fallback that disables non-essential animation, sufficient colour contrast (WCAG AA). Escape-to-dismiss and a focus trap are not applicable as this is not an overlay/dialog/menu.",
+      "responsive_behavior": "The tooltip should adapt its positioning based on the viewport size. At sm breakpoint, it should appear above or below the target element with minimal horizontal offset. At md breakpoint, it should maintain a moderate horizontal offset for better visibility. At lg breakpoint, it should have ample space around it to accommodate larger content without overlapping other elements.",
+      "acceptance_criteria": [
+        "The tooltip displays the correct content when available and shows an explicit empty state with a call-to-action when no data is present.",
+        "The tooltip animates smoothly on hover using Framer Motion's useMotionValue and useSpring APIs, with spring damping controlling the tilt’s responsiveness to cursor movement.",
+        "Keyboard navigation is fully supported, with a visible focus ring indicating the current focus state.",
+        "ARIA roles/labels are correctly implemented for screen readers to understand the purpose of the tooltip.",
+        "The prefers-reduced-motion media query is respected, disabling non-essential animations when enabled."
+      ]
+    },
+    "spec_model": "qwen2.5-coder:14b",
+    "spec_at": "2026-05-29T17:35:18.360698+02:00"
+  },
+  {
+    "id": "00150",
+    "category": "page_section",
+    "subject": "feature_carousel",
+    "style": "y2k_cybercore",
+    "topic": "Orbit — async collaboration tool for distributed teams",
+    "animation": "mouse-driven 3D tilt with damped spring on the hero artwork",
+    "prompt": "Direct the design of a feature carousel for Orbit, blending cinematic depth with functional clarity. Sculpt the interface with y2k_cybercore energy, where Framer Motion’s useMotionValue and useSpring drive a mouse-driven 3D tilt on the hero artwork, creating a damped spring effect that responds dynamically to cursor movement. The carousel should include inline form validation with accessible error messages, ensuring users receive immediate feedback as they interact with input fields. Structure the UI to display feature cards with gradient backgrounds, each containing descriptive text and a call-to-action button implemented locally using React, TypeScript, Tailwind, and Framer Motion, inspired by the 21st.dev animated-button pattern. Ensure keyboard navigation with a visible focus ring, ARIA roles and labels for screen readers, and a prefers-reduced-motion fallback that disables non-essential animation, while maintaining sufficient color contrast for accessibility.",
+    "model": "phi4:14b",
+    "generated_at": "2026-05-27T22:17:40.390016+02:00",
+    "prompt_v1": "Craft a feature_carousel section for Orbit, an async collaboration tool targeting distributed teams. This section should exhibit a y2k_cybercore aesthetic with cinematic 3D visuals: implement camera movement across staggered depth layers, featuring dynamic lighting and particle effects to enhance cybernetic materials. Utilize Framer Motion's `useSpring` and `useTransform` APIs to achieve a mouse-driven 3D tilt effect on the hero artwork, employing `layoutId` for consistent positioning. Incorporate 21st.dev's gradient cards as part of the carousel components for added visual appeal. Set typography and color direction towards vibrant neon hues contrasted against dark backgrounds. The animation should be triggered by mouse position over the carousel items to create an interactive user experience in line with modern cyber aesthetics.",
+    "refine_model": "mistral-small3.2:latest",
+    "refined_at": "2026-05-28T03:46:14.043385+02:00",
+    "prompt_v2": "Bind cinematic depth to the feature carousel, sculpting Orbit’s distributed team hub with y2k_cybercore energy. Stagger 3D layers under a roving camera, where neon particles flicker across metallic surfaces under pulsating light. Framer Motion’s useSpring and useTransform steer the hero artwork into mouse-driven tilts, layoutId locking its pivot as it twists. Populate the carousel with 21st.dev gradient cards, their vivid edges glowing against inky voids. Mouse hovers ignite the interaction, triggering the carousel’s 3D dance in electric sync.",
+    "functional_requirement": "inline form validation with accessible error messages",
+    "prose_model": "mistral-small3.2:latest",
+    "enriched_at": "2026-05-29T17:18:08.258250+02:00",
+    "spec": {
+      "file": "components/FeatureCarousel.tsx",
+      "component_contract": "FeatureCarousel(props: { features: Feature[], onCTAClick: (featureId: string) => void })",
+      "states": [
+        "currentFeatureIndex: number",
+        "isAnimating: boolean",
+        "cursorX: number",
+        "cursorY: number"
+      ],
+      "interaction_trigger": "mouse movement over the carousel container",
+      "implementation_rules": "implement locally; no undocumented or external component imports; 21st.dev used as visual reference only",
+      "accessibility": "full keyboard navigation with a visible focus ring, ARIA roles/labels for screen readers, prefers-reduced-motion fallback that disables non-essential animation, sufficient colour contrast (WCAG AA). The carousel should trap focus within the modal when open and allow dismissal via Escape key.",
+      "responsive_behavior": "At sm breakpoint: display one feature card per row. At md breakpoint: display two feature cards per row. At lg breakpoint: display three feature cards per row.",
+      "acceptance_criteria": [
+        "The carousel displays feature cards with gradient backgrounds, descriptive text, and call-to-action buttons.",
+        "Mouse movement over the carousel container causes a damped spring effect on the hero artwork.",
+        "Inline form validation provides immediate feedback with accessible error messages.",
+        "Keyboard navigation is fully supported with visible focus rings.",
+        "The component adheres to WCAG AA color contrast guidelines."
+      ]
+    },
+    "spec_model": "qwen2.5-coder:14b",
+    "spec_at": "2026-05-29T17:36:06.124167+02:00"
+  },
+  {
+    "id": "00200",
+    "category": "component",
+    "subject": "animated_navbar",
+    "style": "ascii_terminal_3d",
+    "topic": "Forge — design system platform",
+    "animation": "orchestrated timeline using useAnimate + sequence()",
+    "prompt": "Build the animated navbar for Forge, an interactive UI element that merges cinematic terminal aesthetics with robust functionality. The design must include an explicit zero-data state, showing a placeholder message and a call-to-action button when no items are loaded, with the button triggering a data refresh upon click. Implement keyboard navigation with a visible focus ring, ARIA labels for screen readers, and a prefers-reduced-motion fallback that disables non-essential animations. Drive the motion with Framer Motion’s useAnimate and sequence(), orchestrating a precise timeline of frame-by-frame effects that activate on viewport-enter events. The 21st.dev animated-navbar pattern should serve as a visual reference, but the component must be built locally using React, TypeScript, Tailwind, and Framer Motion, with no undocumented dependencies. Ensure high-contrast color pairings and monospace fonts for readability, while maintaining sufficient color contrast for accessibility.",
+    "model": "phi4:14b",
+    "generated_at": "2026-05-27T22:31:59.687020+02:00",
+    "prompt_v1": "Build an animated_navbar component for Forge’s design system platform, serving as a dynamic user interface element. The visual concept should emulate an ASCII terminal 3D style with depth layering and strategic lighting to enhance interactivity and engagement. Utilize Framer Motion's useAnimate API with a sequence() function to orchestrate the animation timeline, ensuring smooth transitions and visually appealing effects. Incorporate elements from the animated navbars category of 21st.dev components to enhance usability and aesthetic appeal. Apply a monospaced typography with contrasting color schemes that reflect the ASCII theme for clarity and visual impact. Trigger animations using viewport-enter interactions to activate when users scroll into view, creating an immersive experience as they navigate through Forge’s platform.",
+    "refine_model": "mistral-small3.2:latest",
+    "refined_at": "2026-05-28T04:14:50.906072+02:00",
+    "prompt_v2": "Build the navigation bar for Forge’s system, functioning as an interactive UI element. The aesthetic should mimic an ASCII terminal 3D style with tiered lighting and shadow gradients to heighten responsiveness. Use Framer Motion’s useAnimate API paired with the sequence() function to choreograph the motion sequence, delivering precise frame-by-frame effects. Integrate elements from the 21st.dev animated navbars collection to refine both practicality and visual coherence. Set the text in monospace fonts with high-contrast color pairings that amplify the terminal theme for sharp readability. Activate animations via viewport-enter events, causing them to play as users scroll into the component’s range.",
+    "functional_requirement": "an explicit empty / zero-data state",
+    "prose_model": "mistral-small3.2:latest",
+    "enriched_at": "2026-05-29T17:19:05.690474+02:00",
+    "spec": {
+      "file": "components/ForgeNavbar.tsx",
+      "component_contract": "ForgeNavbar(props: { items: Item[]; onRefresh: () => void }) => JSX.Element",
+      "states": [
+        "itemsLoaded: boolean",
+        "isAnimating: boolean"
+      ],
+      "interaction_trigger": "viewport-enter",
+      "implementation_rules": "implement locally; no undocumented or external component imports; 21st.dev used as visual reference only",
+      "accessibility": "Full keyboard navigation with a visible focus ring; ARIA roles/labels for screen readers; prefers-reduced-motion fallback that disables non-essential animation; sufficient colour contrast (WCAG AA). Escape-to-dismiss and focus trap included for overlay/dialog/menu components.",
+      "responsive_behavior": "Adapts to sm, md, lg breakpoints with Tailwind's responsive design utilities. The navbar remains horizontally scrollable on smaller screens, and the zero-data state adjusts layout accordingly.",
+      "acceptance_criteria": [
+        "The navbar displays a placeholder message and a call-to-action button when no items are loaded.",
+        "Clicking the refresh button triggers a data refresh function passed via props.",
+        "Keyboard navigation is fully functional with visible focus rings.",
+        "ARIA roles/labels are correctly implemented for screen readers.",
+        "The component respects prefers-reduced-motion settings by disabling non-essential animations."
+      ]
+    },
+    "spec_model": "qwen2.5-coder:14b",
+    "spec_at": "2026-05-29T17:36:49.025961+02:00"
+  },
+  {
+    "id": "00250",
+    "category": "full_page",
+    "subject": "about_page",
+    "style": "liquid_chrome_holography",
+    "topic": "Forge — design system platform",
+    "animation": "kinetic looping marquee with infinite-scroll seam blending",
+    "prompt": "Direct Forge’s about page with a liquid chrome holography aesthetic that balances visual depth with functional precision. Craft a cinematic 3D space where the about section displays a kinetic looping marquee, driven by Framer Motion’s useAnimationFrame for seamless, continuous motion, and AnimatePresence for lifecycle management. Inline form validation should include accessible error messages, with keyboard navigation supported by a visible focus ring and ARIA labels for screen readers. The marquee, inspired by the 21st.dev animated-button pattern but implemented locally in React, TypeScript, Tailwind, and Framer Motion, should guide attention across sections while a prefers-reduced-motion fallback disables non-essential animation. Typography should maintain high contrast, with sleek sans-serif fonts against chrome blue and holographic silver, ensuring legibility and accessibility.",
+    "model": "phi4:14b",
+    "generated_at": "2026-05-27T22:46:01.518822+02:00",
+    "prompt_v1": "Create a captivating about_page for Forge, emphasizing its identity as a design system platform, with a visual concept inspired by liquid chrome holography. Craft a cinematic 3D environment featuring dynamic camera movements, layered depth, and ambient lighting to evoke a futuristic atmosphere, using reflective surfaces and subtle particle effects. Implement the kinetic looping marquee with infinite-scroll seam blending utilizing Framer Motion's useScroll and useTransform for seamless animation transitions, paired with AnimatePresence to ensure smooth lifecycle management. Integrate animated marquees from 21st.dev as central interactive elements that guide user attention across sections. Style typography with sleek sans-serif fonts and a vibrant color palette that harmonizes metallic hues like chrome blue and holographic silver with high contrast text for readability. Trigger animations upon scroll events, enhancing the kinetic flow as users explore content, creating an engaging and immersive experience.",
+    "refine_model": "mistral-small3.2:latest",
+    "refined_at": "2026-05-28T04:43:14.459645+02:00",
+    "prompt_v2": "Direct Forge’s about page with a liquid chrome holography aesthetic. Craft a cinematic 3D space featuring camera movements, layered depth, and ambient lighting that glints like polished metal. Use Framer Motion’s useScroll and useTransform to loop the kinetic marquee with infinite-scroll seam blending, paired with AnimatePresence for clean lifecycle management. Center animated marquees from 21st.dev to guide attention across sections. Style typography in sleek sans-serif fonts, contrasting chrome blue and holographic silver against high-contrast text for legibility. Animate marquees in sync with scroll events, reflecting light as sections shift into view.",
+    "functional_requirement": "inline form validation with accessible error messages",
+    "prose_model": "mistral-small3.2:latest",
+    "enriched_at": "2026-05-29T17:19:54.115381+02:00",
+    "spec": {
+      "file": "components/AboutPage.tsx",
+      "component_contract": "AboutPage: React.FC<{}>",
+      "states": [
+        "isAnimating: boolean",
+        "formIsValid: boolean"
+      ],
+      "interaction_trigger": "scroll",
+      "implementation_rules": "implement locally; no undocumented or external component imports; 21st.dev used as visual reference only",
+      "accessibility": "Full keyboard navigation with a visible focus ring. ARIA roles/labels for screen readers. Prefers-reduced-motion fallback that disables non-essential animation. Sufficient colour contrast (WCAG AA). Escape-to-dismiss and focus trap for overlay/dialog/menu.",
+      "responsive_behavior": "At sm, the marquee adapts to smaller screens with a reduced font size. At md, it maintains its cinematic depth but adjusts spacing for better readability. At lg, the full cinematic experience is restored with enhanced visual effects and larger text sizes.",
+      "acceptance_criteria": [
+        "The kinetic looping marquee scrolls smoothly across the screen on scroll interaction.",
+        "Inline form validation displays accessible error messages with keyboard navigation support.",
+        "Prefers-reduced-motion users have non-essential animations disabled, maintaining a static UI.",
+        "Typography maintains high contrast against chrome blue and holographic silver backgrounds.",
+        "The component is fully responsive and adapts to different screen sizes as specified."
+      ]
+    },
+    "spec_model": "qwen2.5-coder:14b",
+    "spec_at": "2026-05-29T17:37:31.823792+02:00"
+  },
+  {
+    "id": "00300",
+    "category": "full_page",
+    "subject": "blog_post",
+    "style": "cosmic_dark_with_aurora",
+    "topic": "Halo — a privacy-first password manager",
+    "animation": "stagger reveal of children with spring physics on viewport enter",
+    "prompt": "Build a cinematic blog post for Halo that merges cosmic aesthetics with clear functional purpose, starting with an explicit empty state displaying a subtle constellation pattern and a centered \"No posts yet\" message in glowing typography. Structure the layout as a staggered column of cards, each containing a title, meta tags, and a preview image, with the first interaction (click or Enter key) triggering a full expand animation driven by useSpring and layoutId for smooth transitions between states. Ensure full accessibility with keyboard navigation using a visible focus ring, ARIA labels for screen reader context, and a prefers-reduced-motion fallback that flattens animations to static reveals. The 21st.dev animated-button pattern should be locally implemented in React, TypeScript, Tailwind, and Framer Motion, serving only as visual reference while maintaining all core motion through staggerChildren and useInView on viewport enter. Every element must adhere to WCAG contrast standards while maintaining the ethereal glow of celestial bodies.",
+    "model": "phi4:14b",
+    "generated_at": "2026-05-27T23:00:06.380038+02:00",
+    "prompt_v1": "Create a full-page layout for the \"Halo Blog Post\" that introduces Halo, the privacy-first password manager. Construct an immersive cosmic dark theme with aurora effects using layered depth, dynamic lighting, and particle movements to craft a 3D visual experience reminiscent of celestial bodies in space. Employ Framer Motion’s stagger reveal feature with spring physics as children elements enter the viewport, utilizing APIs like useScroll for interactive animations and layoutId for component coordination. Integrate 21st.dev's glow-cards category into this cosmic theme for an engaging presentation of content sections, complete with typography set in a modern sans-serif font over dark backgrounds accented by vibrant aurora color palettes. Ensure the interaction is initiated by viewport-enter to activate the staggered animation sequence.",
+    "refine_model": "mistral-small3.2:latest",
+    "refined_at": "2026-05-28T05:11:07.580326+02:00",
+    "prompt_v2": "Spin celestial visuals across the screen for Halo's blog post introduction, blending cosmic darkness with aurora trails that mimic drifting nebulae. Layer depth and twinkling particles to evoke floating stars and distant galaxies, with 21st.dev glow-cards pulsing like supernovas against inky backdrops. Trigger Framer Motion's stagger animations on viewport entry, using spring physics to make headings and text blocks bounce into view like asteroids breaking orbit. Coordinate elements with layoutId while tracking scroll depth via useScroll to time animated reveals. Set crisp sans-serif typography against vibrant glow gradients, ensuring every interaction feels like navigating a star map.",
+    "functional_requirement": "an explicit empty / zero-data state",
+    "prose_model": "mistral-small3.2:latest",
+    "enriched_at": "2026-05-29T17:20:52.466907+02:00",
+    "spec": {
+      "file": "components/BlogPostList.tsx",
+      "component_contract": "BlogPostList(props: { posts: Post[] }) => ReactElement",
+      "states": [
+        "isEmpty (boolean): Indicates if there are no posts to display.",
+        "selectedPostId (string | null): Tracks the currently selected post for expansion."
+      ],
+      "interaction_trigger": "Viewport-enter",
+      "implementation_rules": "Implement locally; no undocumented or external component imports; 21st.dev used as visual reference only.",
+      "accessibility": "Full keyboard navigation with a visible focus ring. ARIA roles/labels for screen readers. Prefers-reduced-motion fallback that disables non-essential animation. Sufficient colour contrast (WCAG AA).",
+      "responsive_behavior": "At sm, cards stack vertically. At md and lg, they form a staggered column layout.",
+      "acceptance_criteria": [
+        "Displays an empty state with a constellation pattern and 'No posts yet' message when no posts are available.",
+        "Each card contains a title, meta tags, and preview image.",
+        "Clicking or pressing Enter on a post triggers a full expand animation.",
+        "Keyboard navigation is fully functional with visible focus rings.",
+        "Animations are disabled for users with prefers-reduced-motion enabled."
+      ]
+    },
+    "spec_model": "qwen2.5-coder:14b",
+    "spec_at": "2026-05-29T17:38:11.939540+02:00"
+  },
+  {
+    "id": "00350",
+    "category": "layout_pattern",
+    "subject": "revealed_on_scroll_lock",
+    "style": "soft_serif_luxe",
+    "topic": "Quill — AI writing studio",
+    "animation": "scroll-snap sections with camera-FOV change on each snap",
+    "prompt": "Direct the design of Quill’s revealed on scroll lock, where inline form validation with accessible error messages appears as sections snap into view, driven by Framer Motion’s useScroll to create camera-FOV shifts and depth transitions. Each snap should reveal form inputs, their labels, and validation states, with keyboard navigation supported by visible focus rings and ARIA attributes for screen readers, while a prefers-reduced-motion fallback disables non-essential animation. Glow-cards from 21st.dev inspire the visual contrast, but implement them locally using React, TypeScript, Tailwind, and Framer Motion, with no undocumented imports. Use useScroll to trigger scroll-snap sections and FOV adjustments, ensuring sufficient color contrast throughout. The user’s scroll input dictates the sequence, shifting focus like a cinematic tracking shot while maintaining accessibility.",
+    "model": "phi4:14b",
+    "generated_at": "2026-05-27T23:14:00.276416+02:00",
+    "prompt_v1": "Build a revealed-on-scroll layout for Quill — AI Writing Studio, employing scroll-snap sections with camera field-of-view changes to unveil each new section. Visualize a cinematic experience where depth layering transitions are accentuated by subtle lighting effects and particle enhancements that mimic a luxuriant soft serif atmosphere. Utilize Framer Motion APIs such as useScroll for precise scroll management, layoutId to maintain consistent layouts, and AnimatePresence for seamless entry and exit animations; incorporate 21st.dev's glow-cards category for visually striking elements. Implement typography in delicate serif fonts with a muted color palette that exudes sophistication and elegance. Trigger the animation through user scrolling, ensuring each snap not only shifts focus but also adjusts the perceived camera depth to enhance the immersive experience.",
+    "refine_model": "mistral-small3.2:latest",
+    "refined_at": "2026-05-28T05:39:12.563755+02:00",
+    "prompt_v2": "Bind the layout to reveal sections on scroll, with camera field-of-view shifts and depth layering transitions that pull focus like a tracking shot. Lighting effects and particles should suggest a luxuriant soft serif atmosphere, while glow-cards from 21st.dev add visual contrast. Use the useScroll, layoutId, and AnimatePresence APIs from Framer Motion to manage scroll behavior and animations. Apply delicate serif fonts with a muted palette, and let user scrolling dictate the sequence—each snap should adjust perceived depth while shifting attention.",
+    "functional_requirement": "inline form validation with accessible error messages",
+    "prose_model": "mistral-small3.2:latest",
+    "enriched_at": "2026-05-29T17:21:47.969065+02:00",
+    "spec": {
+      "file": "components/QuillForm.tsx",
+      "component_contract": "QuillForm(props: { onSubmit: (formData: FormData) => void })",
+      "states": [
+        "isAnimating: boolean",
+        "currentSectionIndex: number",
+        "formErrors: Record<string, string>"
+      ],
+      "interaction_trigger": "scroll",
+      "implementation_rules": "implement locally; no undocumented or external component imports; 21st.dev used as visual reference only",
+      "accessibility": "full keyboard navigation with a visible focus ring; ARIA roles/labels for screen readers; prefers-reduced-motion fallback that disables non-essential animation; sufficient color contrast (WCAG AA)",
+      "responsive_behavior": "At sm, sections stack vertically. At md and lg, sections display in a grid layout with more space between them.",
+      "acceptance_criteria": [
+        "Form inputs, labels, and validation states are revealed as sections snap into view on scroll",
+        "Keyboard navigation is supported with visible focus rings",
+        "ARIA roles/labels ensure screen readers understand the form structure and state",
+        "Non-essential animations are disabled for users with prefers-reduced-motion enabled",
+        "Sufficient color contrast (WCAG AA) is maintained throughout the component"
+      ]
+    },
+    "spec_model": "qwen2.5-coder:14b",
+    "spec_at": "2026-05-29T17:38:51.951488+02:00"
+  },
+  {
+    "id": "00400",
+    "category": "full_page",
+    "subject": "about_page",
+    "style": "y2k_cybercore",
+    "topic": "Neura — an AI productivity assistant",
+    "animation": "scrub-controlled camera dolly using scrollYProgress",
+    "prompt": "Build Neura’s About page as a striking 3D neon cybercore landscape with metallic surfaces and floating holographic particles, animated via Framer Motion’s useScroll and useTransform to synchronize camera dolly movement with scrollYProgress. The layout must include a zero-data state, displaying a clear placeholder when no content is available. Structure the page with a gradient card, locally implemented in React, TypeScript, Tailwind, and Framer Motion—inspired by the 21st.dev animated-button pattern but built without undocumented imports. Ensure accessibility with keyboard navigation featuring a visible focus ring, ARIA roles and labels for screen readers, a prefers-reduced-motion fallback, and sufficient color contrast. Scroll-driven animations unfold as the user progresses, revealing Neura’s capabilities in a dynamic, visually rich sequence.",
+    "model": "phi4:14b",
+    "generated_at": "2026-05-27T23:27:48.583129+02:00",
+    "prompt_v1": "Craft a full-page layout showcasing Neura, an AI productivity assistant, on its about page with a y2k cybercore aesthetic. Establish a dynamic 3D visual concept using depth layering and neon lighting effects, complemented by holographic particles and metallic materials, creating an immersive experience. Implement animation using Framer Motion's useScroll to control camera movement through a scrub-controlled dolly effect based on scrollYProgress. Integrate a gradient card from the 21st.dev component category, accentuating the y2k cybercore theme with animated transitions. Apply typography that combines bold sans-serif fonts and vivid, contrasting colors to enhance neon visuals. Trigger these animations as users scroll through the page, ensuring a seamless interaction that guides them through Neura's features and capabilities.",
+    "refine_model": "mistral-small3.2:latest",
+    "refined_at": "2026-05-28T06:06:55.420914+02:00",
+    "prompt_v2": "Build Neura’s About page with a striking y2k cybercore aesthetic, featuring a 3D visual landscape of neon glow and metallic surfaces, punctuated by floating holographic particles. Animate camera movement through Framer Motion’s useScroll, synchronizing a dolly effect to scrollYProgress. Highlight key details with a gradient card from 21st.dev’s components, using animated transitions to emphasize the futuristic theme. Bold sans-serif typography in high-contrast colors sharpens the neon intensity. Scrolling activates the sequence, revealing Neura’s capabilities in a rhythm of visual discovery.",
+    "functional_requirement": "an explicit empty / zero-data state",
+    "prose_model": "mistral-small3.2:latest",
+    "enriched_at": "2026-05-29T17:22:38.031850+02:00",
+    "spec": {
+      "file": "app/NeuraAboutPage.tsx",
+      "component_contract": "NeuraAboutPage: () => JSX.Element",
+      "states": [
+        "scrollYProgress: number",
+        "isContentAvailable: boolean"
+      ],
+      "interaction_trigger": "scroll",
+      "implementation_rules": "Implement locally; no undocumented or external component imports; 21st.dev used as visual reference only.",
+      "accessibility": "Full keyboard navigation with a visible focus ring, ARIA roles/labels for screen readers, prefers-reduced-motion fallback that disables non-essential animation, sufficient color contrast (WCAG AA).",
+      "responsive_behavior": "At sm: gradient card adapts to smaller screens; at md: layout maintains core elements but reduces complexity; at lg: full 3D neon cybercore landscape with metallic surfaces and floating holographic particles.",
+      "acceptance_criteria": [
+        "The page displays a gradient card with zero-data state when no content is available.",
+        "Scroll-driven animations are synchronized with scrollYProgress using Framer Motion's useScroll and useTransform.",
+        "The layout adapts responsively at sm, md, and lg breakpoints.",
+        "Accessibility features include keyboard navigation, ARIA roles/labels, prefers-reduced-motion fallback, and sufficient color contrast.",
+        "The page is visually rich with a 3D neon cybercore landscape featuring metallic surfaces and floating holographic particles."
+      ]
+    },
+    "spec_model": "qwen2.5-coder:14b",
+    "spec_at": "2026-05-29T17:39:34.920631+02:00"
+  },
+  {
+    "id": "00450",
+    "category": "page_section",
+    "subject": "live_dashboard_preview",
+    "style": "editorial_swiss_minimal",
+    "topic": "Orbit — async collaboration tool for distributed teams",
+    "animation": "scroll-driven (useScroll + useTransform) parallax with 3 depth layers",
+    "prompt": "Direct the viewer’s attention to a live dashboard preview within Orbit’s async collaboration interface, where users see real-time data updates in a structured grid. Each row displays metrics like user activity and system health, with inline form validation that highlights errors with accessible messages as users type. Implement scroll-driven parallax using Framer Motion’s useScroll and useTransform APIs to animate three depth layers—foreground elements move faster than midground and background, creating a sense of space. The layout includes a visible keyboard focus ring, ARIA labels for screen readers, and a prefers-reduced-motion fallback that disables parallax. For visual flair, reference 21st.dev’s animated-button pattern, but build it locally with React, TypeScript, Tailwind, and Framer Motion, ensuring no undocumented imports. Motion should feel intuitive, guiding users to explore the dashboard’s features through natural scrolling.",
+    "model": "phi4:14b",
+    "generated_at": "2026-05-27T23:42:01.858422+02:00",
+    "prompt_v1": "Construct a section within the Orbit async collaboration tool's web interface designed to showcase a live dashboard preview. This feature will embody an editorial Swiss minimal aesthetic, employing a scroll-driven parallax animation across three depth layers—foreground elements glide at varying speeds to create dynamic 3D effects as users scroll down the page. Utilize Framer Motion's useScroll and useTransform APIs to achieve seamless motion within each layer while integrating AnimatePresence for smooth entry and exit animations of components such as gradient cards from 21st.dev’s collection, providing an engaging, layered visual hierarchy. Typography will maintain simplicity with a clean sans-serif font against a monochromatic color palette featuring soft grays and whites, enhancing the sleek, professional feel. The animation is triggered by scrolling, inviting users to engage more deeply with the content through intuitive navigation of the live dashboard’s various features.",
+    "refine_model": "mistral-small3.2:latest",
+    "refined_at": "2026-05-28T06:35:01.905459+02:00",
+    "prompt_v2": "Direct the viewer’s attention to a live dashboard preview within Orbit’s async collaboration interface. Layer three parallax planes—foreground elements drift at distinct paces to forge depth, with scroll-driven momentum steering each tier. Motion’s useScroll and useTransform APIs orchestrate the flow, while AnimatePresence cues the graceful arrival and departure of gradient cards from 21st.dev’s library, sculpting a tactile visual hierarchy. Keep typography sparse and crisp: a no-frills sans-serif font against muted grays and whites. The animation responds to scroll position, coaxing exploration of the dashboard’s features through instinctive interaction.",
+    "functional_requirement": "inline form validation with accessible error messages",
+    "prose_model": "mistral-small3.2:latest",
+    "enriched_at": "2026-05-29T17:23:32.647899+02:00",
+    "spec": {
+      "file": "components/DashboardPreview.tsx",
+      "component_contract": "DashboardPreview(props: { data: MetricData[] }) => JSX.Element",
+      "states": [
+        "scrollY: number",
+        "We track the vertical scroll position to animate parallax layers."
+      ],
+      "interaction_trigger": "scroll",
+      "implementation_rules": "Implement locally; no undocumented or external component imports; 21st.dev used as visual reference only.",
+      "accessibility": "Full keyboard navigation with a visible focus ring, ARIA roles/labels for screen readers, prefers-reduced-motion fallback that disables non-essential animation, sufficient colour contrast (WCAG AA).",
+      "responsive_behavior": "At sm: grid layout adapts to smaller screens; at md: maintains structured grid with slightly larger font sizes; at lg: full parallax effect and detailed inline form validation.",
+      "acceptance_criteria": [
+        "The dashboard preview displays real-time data updates in a structured grid.",
+        "Scroll-driven parallax animation is implemented using Framer Motion's useScroll and useTransform APIs.",
+        "Keyboard focus ring is visible and functional across all interactive elements.",
+        "ARIA roles/labels are correctly applied to ensure screen reader accessibility.",
+        "Prefers-reduced-motion media query disables the parallax effect for users with reduced motion preference."
+      ]
+    },
+    "spec_model": "qwen2.5-coder:14b",
+    "spec_at": "2026-05-29T17:40:12.845392+02:00"
+  },
+  {
+    "id": "00500",
+    "category": "page_section",
+    "subject": "case_study_split",
+    "style": "paper_collage_3d",
+    "topic": "Quill — AI writing studio",
+    "animation": "scrub-controlled camera dolly using scrollYProgress",
+    "prompt": "Build a Quill case study split with a cinematic 3D paper collage aesthetic that clearly shows an empty or zero-data state. The split must display two panels, one for the case study and one for the split content, with a keyboard-navigable toggle that shifts focus with a visible ring and ARIA labels for screen readers. The scrub-controlled camera dolly, powered by Framer Motion’s useScroll and useTransform, smoothly translates elements along the scrollYProgress axis while respecting prefers-reduced-motion with static fallbacks. Implement the 21st.dev animated-button pattern locally in React, TypeScript, Tailwind, and Framer Motion, ensuring sufficient colour contrast and no undocumented imports. The user triggers animations by scrolling, revealing layered textures and glow-card tracers that guide interaction.",
+    "model": "phi4:14b",
+    "generated_at": "2026-05-27T23:55:35.518966+02:00",
+    "prompt_v1": "Craft a dynamic Quill case study section that showcases the AI writing studio as a narrative journey through an interactive paper collage 3D environment. Create depth with multiple layered elements, applying varying lighting effects and textured materials to simulate paper folds and shadows, all dynamically revealed via a scrub-controlled camera dolly movement triggered by scrollYProgress. Utilize Framer Motion's useScroll, useTransform, AnimatePresence, and useSpring APIs to animate the transition between sections smoothly as users scroll through the content. Integrate 21st.dev's glow-cards component category to enhance visual interest with luminescent accents that highlight key features of Quill. Use a typography palette featuring crisp sans-serif fonts in shades of charcoal gray against a soft cream background, complemented by occasional bursts of rich teal for contrast and emphasis. The animation triggers as users scroll, creating an engaging experience that mirrors the explorative nature of using Quill's AI-powered tools.",
+    "refine_model": "mistral-small3.2:latest",
+    "refined_at": "2026-05-28T07:02:10.238109+02:00",
+    "prompt_v2": "Spin through a Quill case study that unfolds like a tactile paper collage in 3D space. Layered elements with wrinkled textures and soft-edged shadows create depth, their details emerging as a camera glides along a scrollYProgress-driven path. Use Framer Motion’s useScroll, useTransform, AnimatePresence, and useSpring to choreograph section transitions, while 21st.dev’s glow-cards add subtle luminescent tracers that guide the eye. Set crisp sans-serif fonts in charcoal gray against a cream backdrop, punctuated by teal accents for visual contrast. The animation triggers on scroll, mimicking the tactile discovery of Quill’s AI tools.",
+    "functional_requirement": "an explicit empty / zero-data state",
+    "prose_model": "mistral-small3.2:latest",
+    "enriched_at": "2026-05-29T17:24:23.725827+02:00",
+    "spec": {
+      "file": "components/QuillCaseStudySplit.tsx",
+      "component_contract": "QuillCaseStudySplit(props: { title: string; description: string; caseStudyContent: ReactNode; splitContent: ReactNode }) => JSX.Element",
+      "states": [
+        "isFocusOnCaseStudy: boolean",
+        "scrollYProgress: number"
+      ],
+      "interaction_trigger": "scroll",
+      "implementation_rules": "implement locally; no undocumented or external component imports; 21st.dev used as visual reference only",
+      "accessibility": "Full keyboard navigation with a visible focus ring, ARIA roles/labels for screen readers, prefers-reduced-motion fallback that disables non-essential animation, sufficient colour contrast (WCAG AA). Escape-to-dismiss and a focus trap are not applicable since this is not an overlay/dialog/menu.",
+      "responsive_behavior": "At sm: the split becomes vertical. At md: the split remains horizontal with slightly larger elements. At lg: the split maintains horizontal layout with enhanced visual details and spacing.",
+      "acceptance_criteria": [
+        "The component displays two panels, one for the case study and one for the split content, with a toggle that shifts focus with a visible ring and ARIA labels for screen readers.",
+        "The scrub-controlled camera dolly smoothly translates elements along the scrollYProgress axis while respecting prefers-reduced-motion with static fallbacks.",
+        "The animated-button pattern from 21st.dev is implemented locally in React, TypeScript, Tailwind, and Framer Motion, ensuring sufficient colour contrast and no undocumented imports.",
+        "Animations are triggered by scrolling, revealing layered textures and glow-card tracers that guide interaction.",
+        "All elements meet WCAG AA for colour contrast."
+      ]
+    },
+    "spec_model": "qwen2.5-coder:14b",
+    "spec_at": "2026-05-29T17:41:04.946626+02:00"
+  },
+  {
+    "id": "00550",
+    "category": "page_section",
+    "subject": "tabbed_features",
+    "style": "vaporwave_retrofuturist",
+    "topic": "Atlas — AI knowledge base",
+    "animation": "scroll-driven (useScroll + useTransform) parallax with 3 depth layers",
+    "prompt": "Direct the design of a tabbed features system for Atlas, where scroll-driven parallax creates cinematic depth with three layers: slow-moving backgrounds, midground elements that track scroll velocity via useScroll and useTransform, and static foreground controls. Each tab reveals inline forms with accessible validation, displaying error messages near the relevant field and supporting keyboard navigation with a visible focus ring. The structure presents tab headers with ARIA labels, a prefers-reduced-motion fallback that disables particle animations, and sufficient colour contrast for readability. 21st.dev's animated-button pattern inspires the interactive elements, implemented locally in React, TypeScript, Tailwind, and Framer Motion without undocumented imports. Users select tabs to reveal dynamic content, with useTransform adjusting motion intensity based on scroll distance to enhance the retrofuturist aesthetic.",
+    "model": "phi4:14b",
+    "generated_at": "2026-05-28T00:09:20.189218+02:00",
+    "prompt_v1": "Craft a scroll-driven tabbed_features page section for Atlas — AI knowledge base, with a vaporwave_retrofuturist visual style that conveys depth through parallax using three layers. Set up a cinematic 3D environment where background elements move slowly to create an ethereal sense of depth, midground features follow more closely, and foreground elements remain stable. Integrate Framer Motion's useScroll for scroll-triggered animation, and useTransform to apply varying motion effects based on scroll distance across the parallax layers. Incorporate 21st.dev's gradient cards as interactive tab content that shift colors subtly with each transition. Employ typography featuring neon-accented sans-serif fonts against pastel gradients to embody retrofuturism. The animation is activated by scrolling, with subtle enhancements like particles and light glows responding fluidly to motion input, creating an immersive user experience.",
+    "refine_model": "mistral-small3.2:latest",
+    "refined_at": "2026-05-28T07:29:53.480509+02:00",
+    "prompt_v2": "Bind parallax depth to scroll-driven tabs for Atlas, crafting a vaporwave-retrofuturist interface where neon-accented sans-serif typography glows against pastel gradients. Layer three parallax planes: slow-drifting backgrounds, midground features tracking scroll velocity, and static foreground elements. Use Framer Motion's useScroll to trigger animations and useTransform to vary motion intensity by scroll distance. 21st.dev's gradient cards populate the tabbed features, subtly morphing hues with each selection. Particles and light glows ripple in response to movement, heightening the retrofuturist ambiance as users scroll.",
+    "functional_requirement": "inline form validation with accessible error messages",
+    "prose_model": "mistral-small3.2:latest",
+    "enriched_at": "2026-05-29T17:25:18.113448+02:00",
+    "spec": {
+      "file": "components/AtlasTabbedFeatures.tsx",
+      "component_contract": "AtlasTabbedFeatures: React.FC<{}>",
+      "states": [
+        "selectedTabIndex: number",
+        "isAnimating: boolean"
+      ],
+      "interaction_trigger": "scroll",
+      "implementation_rules": "implement locally; no undocumented or external component imports; 21st.dev used as visual reference only",
+      "accessibility": "Full keyboard navigation with a visible focus ring, ARIA roles/labels for screen readers, prefers-reduced-motion fallback that disables particle animations, sufficient colour contrast (WCAG AA). Escape-to-dismiss and a focus trap are included for overlay/dialog/menu components.",
+      "responsive_behavior": "At sm breakpoint: tabs stack vertically; At md breakpoint: tabs align horizontally with scrollable overflow; At lg breakpoint: full tabbed interface as designed.",
+      "acceptance_criteria": [
+        "Tabs are navigable via keyboard with visible focus ring",
+        "ARIA roles/labels are correctly applied to all interactive elements",
+        "Prefers-reduced-motion users experience no particle animations",
+        "Color contrast meets WCAG AA standards for readability",
+        "Dynamic content reveals on tab selection, adjusting motion intensity based on scroll distance"
+      ]
+    },
+    "spec_model": "qwen2.5-coder:14b",
+    "spec_at": "2026-05-29T17:41:43.202284+02:00"
+  },
+  {
+    "id": "00600",
+    "category": "micro_interaction",
+    "subject": "sticker_peel_hover",
+    "style": "neo_brutalist_typography_meets_glass",
+    "topic": "Halo — a privacy-first password manager",
+    "animation": "scroll-driven (useScroll + useTransform) parallax with 3 depth layers",
+    "prompt": "Build a \"Sticker Peel Hover\" micro-interaction for Halo, where a scroll-driven parallax effect reveals a 3D scene as the user scrolls, mimicking the action of peeling a sticker. Three depth layers animate with useScroll and useTransform: foreground elements lift like adhesive notes, mid-ground components shift in parallax, and background surfaces reflect light with glass-like translucency. The interaction begins when the screen descends, exposing new details incrementally, with a clear empty state displayed before any data loads. Ensure accessibility with keyboard navigation, visible focus rings, ARIA labels, a prefers-reduced-motion fallback, and sufficient color contrast. Implement the design locally in React, TypeScript, Tailwind, and Framer Motion, using 21st.dev's hover-borders pattern as visual reference, without undocumented imports.",
+    "model": "phi4:14b",
+    "generated_at": "2026-05-28T00:23:35.253575+02:00",
+    "prompt_v1": "Craft a micro-interaction pattern named \"Sticker Peel Hover\" for Halo, enhancing user engagement with privacy assurance. Envision a 3D cinematic scene where camera motion reveals three depth layers: foreground elements peel away like stickers against a stark neo-brutalist typography backdrop, mid-ground features gently parallax as users scroll, and background textures mimic glassy surfaces under diffuse light, evoking a tactile yet digital feel. Utilize Framer Motion's useScroll and useTransform to animate these layers, employing staggered animations for a cohesive effect. Incorporate hover-borders from 21st.dev's library to emphasize interactive elements subtly as users scroll through the content. Adopt a bold and raw typography style with high-contrast colors, primarily using shades of black, white, and metallic greys to accentuate the neo-brutalist aesthetic. Trigger this engaging parallax animation as users scroll down the page, revealing new layers and details progressively.",
+    "refine_model": "mistral-small3.2:latest",
+    "refined_at": "2026-05-28T07:57:50.062085+02:00",
+    "prompt_v2": "Build a \"Sticker Peel Hover\" micro-interaction for Halo, where a 3D scene unfolds as fingers trace across the screen. Three distinct layers respond: foreground elements lift like adhesive-backed notes, mid-ground components shift in parallax, and background surfaces reflect light with glass-like translucency. Use the useScroll and useTransform APIs to orchestrate staggered animations, while 21st.dev's hover-borders highlight interactive zones. Maintain a stark typography of black, white, and metallic greys against a neo-brutalist canvas. Initiate the animation when the screen descends, unveiling fresh details incrementally.",
+    "functional_requirement": "an explicit empty / zero-data state",
+    "prose_model": "mistral-small3.2:latest",
+    "enriched_at": "2026-05-29T17:26:12.740280+02:00",
+    "spec": {
+      "file": "components/StickerPeelHover.tsx",
+      "component_contract": "StickerPeelHover(props: { data: any[] }) => JSX.Element",
+      "states": [
+        "isDataLoaded: boolean",
+        "scrollPosition: number"
+      ],
+      "interaction_trigger": "scroll",
+      "implementation_rules": "implement locally; no undocumented or external component imports; 21st.dev used as visual reference only",
+      "accessibility": "Full keyboard navigation with a visible focus ring. ARIA roles/labels for screen readers. Prefers-reduced-motion fallback that disables non-essential animation. Sufficient colour contrast (WCAG AA). Escape-to-dismiss and a focus trap for overlay/dialog/menu.",
+      "responsive_behavior": "At sm, the parallax effect is minimal. At md, the parallax effect is moderate. At lg, the parallax effect is pronounced with full depth layers visible.",
+      "acceptance_criteria": [
+        "The component displays a clear empty state before any data loads.",
+        "Foreground elements lift like adhesive notes as the user scrolls.",
+        "Mid-ground components shift in parallax as the user scrolls.",
+        "Background surfaces reflect light with glass-like translucency as the user scrolls.",
+        "All accessibility features (keyboard navigation, focus ring, ARIA labels, prefers-reduced-motion fallback, color contrast) are fully implemented."
+      ]
+    },
+    "spec_model": "qwen2.5-coder:14b",
+    "spec_at": "2026-05-29T17:42:28.353268+02:00"
+  },
+  {
+    "id": "00650",
+    "category": "page_section",
+    "subject": "faq_accordion",
+    "style": "obsidian_monochrome_with_red_accent",
+    "topic": "Drift — async voice notes for product teams",
+    "animation": "shared layout transitions (layoutId) between cards",
+    "prompt": "Direct the creation of an FAQ accordion for Drift’s async voice notes tool, blending cinematic 3D depth with obsidian monochrome, red accents, and sharp lighting. Ensure inline form validation with accessible error messages, visible focus rings for keyboard navigation, ARIA labels, and a prefers-reduced-motion fallback. Cards should share layoutId transitions via Framer Motion’s layoutId property, driving seamless motion as users toggle questions open or closed. Structure the UI so that each question card reveals its answer in a staggered sequence, with the text and validation states updating dynamically on interaction. Implement the 21st.dev animated-button pattern locally using React, TypeScript, Tailwind, and Framer Motion, avoiding undocumented imports while maintaining crisp typography. Maintain sufficient color contrast and ensure all animations respect prefers-reduced-motion.",
+    "model": "phi4:14b",
+    "generated_at": "2026-05-28T00:37:44.953778+02:00",
+    "prompt_v1": "Create an interactive FAQ accordion section for Drift's async voice notes tool, employing a sleek obsidian monochrome theme with striking red accents. Construct this in 3D space with dynamic depth layering and sharp lighting to emphasize each question card's transition, using shared layoutId transitions between cards to maintain fluidity and cohesiveness as users scroll through the FAQ items. Implement Framer Motion's AnimatePresence and useMotionValue for smooth animations, while leveraging variants to orchestrate staggered appearances of the accordion components. Integrate 21st.dev's animated buttons category to enhance user engagement on each question toggle, ensuring consistent typography with crisp sans-serif fonts and a monochrome palette highlighted by red interactive elements. The scroll action will trigger these engaging animations, offering users an intuitive navigation experience as they explore Drift's features.",
+    "refine_model": "mistral-small3.2:latest",
+    "refined_at": "2026-05-28T08:25:56.890113+02:00",
+    "prompt_v2": "Direct your cursor to construct an interactive FAQ accordion for Drift’s async voice notes tool. Cast it in 3D space with a sleek obsidian monochrome theme, striking red accents, and sharp lighting to highlight each question card’s transition. Use AnimatePresence and useMotionValue to orchestrate staggered appearances, with shared layoutId transitions for fluidity. Integrate animated buttons from 21st.dev’s animated buttons category, ensuring crisp sans-serif typography and a monochrome palette punctuated by red. The scroll action triggers these animations, making navigation intuitive.",
+    "functional_requirement": "inline form validation with accessible error messages",
+    "prose_model": "mistral-small3.2:latest",
+    "enriched_at": "2026-05-29T17:27:06.408467+02:00",
+    "spec": {
+      "file": "components/FAQAccordion.tsx",
+      "component_contract": "FAQAccordion(props: { questions: { question: string; answer: string }[] }) => JSX.Element",
+      "states": [
+        "isOpen: boolean[]",
+        ">// Tracks which FAQ items are open"
+      ],
+      "interaction_trigger": "click",
+      "implementation_rules": "Implement locally; no undocumented or external component imports; 21st.dev used as visual reference only.",
+      "accessibility": "Full keyboard navigation with a visible focus ring. ARIA roles/labels for screen readers. Prefers-reduced-motion fallback that disables non-essential animation. Sufficient colour contrast (WCAG AA).",
+      "responsive_behavior": "At sm, cards stack vertically. At md and lg, cards are displayed in two columns.",
+      "acceptance_criteria": [
+        "Each FAQ item can be toggled open or closed with a click.",
+        "Inline form validation with accessible error messages is present.",
+        "Visible focus rings for keyboard navigation are implemented.",
+        "ARIA roles/labels are correctly applied for screen readers.",
+        "Animations respect prefers-reduced-motion and have sufficient color contrast."
+      ]
+    },
+    "spec_model": "qwen2.5-coder:14b",
+    "spec_at": "2026-05-29T17:43:05.902203+02:00"
+  },
+  {
+    "id": "00700",
+    "category": "page_section",
+    "subject": "interactive_demo",
+    "style": "editorial_swiss_minimal",
+    "topic": "Lumen — AI-powered video editor",
+    "animation": "magnetic cursor attraction on CTAs with motion values",
+    "prompt": "Build an interactive demo for Lumen’s AI-powered video editor, blending cinematic 3D perspective views with clean, accessible UI. When the screen loads empty, users should see a prominent call-to-action with a visible focus ring for keyboard navigation, ARIA labels for screen readers, and a prefers-reduced-motion fallback that removes non-essential animation. Use Framer Motion’s useMotionValue and useSpring to drive magnetic cursor attraction on CTAs, where the cursor’s position influences a spring physics–based pull toward buttons, creating a tactile interaction. Implement the 21st.dev animated-button pattern locally with React, TypeScript, Tailwind, and Framer Motion, ensuring sufficient color contrast and no undocumented imports. Stagger animations with useTransform for fluid motion, while keeping typography crisp in a muted grayscale palette for precision.",
+    "model": "phi4:14b",
+    "generated_at": "2026-05-28T00:52:14.543435+02:00",
+    "prompt_v1": "Craft an interactive demo section for Lumen's AI-powered video editor, serving as a hands-on showcase of its capabilities. Visualize this with editorial swiss minimalism: employ depth layering through 3D perspective views and subtle light gradients on clean interfaces, using Framer Motion’s useTransform to enhance the magnetic cursor attraction effect on CTAs. Integrate the magnetic CTA component from 21st.dev, animating them to draw attention dynamically as users interact with the section. Typography will be sans-serif, utilizing a muted color palette of grays and whites for elegance and readability. Trigger animations upon mouse-position changes to create an engaging magnetic attraction effect on CTAs. Ensure interactive elements leverage Framer Motion's staggered animation variants and useSpring for fluid motion effects, enhancing user engagement seamlessly as they explore Lumen's features.",
+    "refine_model": "mistral-small3.2:latest",
+    "refined_at": "2026-05-28T08:53:49.980048+02:00",
+    "prompt_v2": "Spin a hands-on demo section for Lumen’s AI-powered video editor, where crisp editorial minimalism meets tactile interaction. Craft 3D perspective views with subtle light gradients against clean interfaces, harnessing Framer Motion’s useTransform to pull the magnetic cursor toward CTAs. The magnetic CTA component from 21st.dev should pulse and sway as the mouse drifts near, triggered by position changes. Stick to sans-serif typography and a muted grayscale palette for precision. Let Framer Motion’s staggered animation variants and useSpring physics guide every fluid motion, making the magnetic pull feel deliberate and responsive.",
+    "functional_requirement": "an explicit empty / zero-data state",
+    "prose_model": "mistral-small3.2:latest",
+    "enriched_at": "2026-05-29T17:28:01.043417+02:00",
+    "spec": {
+      "file": "components/LumenVideoEditorDemo.tsx",
+      "component_contract": "LumenVideoEditorDemo: React.FC<{}>",
+      "states": [
+        "cursorPositionX: MotionValue<number>",
+        "cursorPositionY: MotionValue<number>",
+        "buttonX: MotionValue<number>",
+        "buttonY: MotionValue<number>"
+      ],
+      "interaction_trigger": "viewport-enter",
+      "implementation_rules": "implement locally; no undocumented or external component imports; 21st.dev used as visual reference only",
+      "accessibility": "Full keyboard navigation with a visible focus ring; ARIA roles/labels for screen readers; prefers-reduced-motion fallback that disables non-essential animation; sufficient colour contrast (WCAG AA)",
+      "responsive_behavior": "At sm, the call-to-action button should be centered and larger. At md, it should be slightly smaller and aligned to the left. At lg, it should return to its original size and alignment.",
+      "acceptance_criteria": [
+        "The call-to-action button is prominently displayed with a visible focus ring for keyboard navigation.",
+        "ARIA roles/labels are correctly implemented for screen readers.",
+        "When prefers-reduced-motion is enabled, non-essential animations are disabled.",
+        "Sufficient color contrast (WCAG AA) is maintained throughout the component.",
+        "The magnetic cursor attraction effect works as intended, with smooth spring physics-based pull toward buttons."
+      ]
+    },
+    "spec_model": "qwen2.5-coder:14b",
+    "spec_at": "2026-05-29T17:43:49.271747+02:00"
+  },
+  {
+    "id": "00750",
+    "category": "component",
+    "subject": "glow_card",
+    "style": "biomorphic_organic_blobs",
+    "topic": "Quill — AI writing studio",
+    "animation": "shared layout transitions (layoutId) between cards",
+    "prompt": "Direct the glow-card component in Quill’s interface, where biomorphic shapes radiate an ethereal glow with cinematic depth, using Framer Motion’s layoutId to animate seamless transitions between cards. Inline form validation appears as users type, with accessible error messages in high-contrast text and keyboard navigation marked by a visible focus ring. The user flow shows a card expanding to reveal a form with labeled fields, where valid entries trigger layoutId-driven motion, while invalid ones display ARIA-labeled alerts. Implement the 21st.dev animated-button pattern locally in React, TypeScript, Tailwind, and Framer Motion, ensuring sufficient color contrast and a prefers-reduced-motion fallback that disables non-essential animations. Animations ignite on viewport entry via useInView, responding to interaction with tactile precision.",
+    "model": "phi4:14b",
+    "generated_at": "2026-05-28T01:09:10.842841+02:00",
+    "prompt_v1": "Create a reusable UI component called `glow_card` for Quill, an AI writing studio, designed to embody biomorphic organic blobs. Construct a cinematic 3D visual concept that features dynamic camera movements and depth layering with strategic lighting and soft particle effects that enhance the organic material texture of each card. Utilize Framer Motion's layoutId for seamless shared layout transitions between cards as they enter and exit view, ensuring smooth animations with staggered variants to capture user attention during scroll events.\n\nIncorporate a glow-card component from 21st.dev, leveraging its animated properties to augment the biomorphic theme. Apply typography that mimics natural growth patterns with flowing curves in pastel hues of green, blue, and purple, maintaining visual harmony across cards. Trigger these animations on viewport enter to create an immersive experience as users interact with Quill's writing studio interface.",
+    "refine_model": "mistral-small3.2:latest",
+    "refined_at": "2026-05-28T09:22:24.008685+02:00",
+    "prompt_v2": "Bind biomorphic glow-card components into Quill’s AI writing space, where organic blobs pulse with cinematic 3D depth. Framer Motion’s layoutId animates shared layout transitions between cards, with staggered variants triggered by scroll events. Strategic lighting and soft particle effects reveal textured surfaces, while 21st.dev’s glow-card components enhance the organic theme. Typography flows in pastel green, blue, and purple curves, mirroring natural growth. Animations ignite on viewport entry, responding to interaction with subtle, tactile precision.",
+    "functional_requirement": "inline form validation with accessible error messages",
+    "prose_model": "mistral-small3.2:latest",
+    "enriched_at": "2026-05-29T17:28:53.842818+02:00",
+    "spec": {
+      "file": "components/GlowCard.tsx",
+      "component_contract": "GlowCard(props: { title: string; description: string; onSubmit: (formData: FormData) => void })",
+      "states": [
+        "isExpanded: boolean",
+        "formData: Record<string, string>",
+        "errors: Record<string, string>"
+      ],
+      "interaction_trigger": "viewport-enter",
+      "implementation_rules": "implement locally; no undocumented or external component imports; 21st.dev used as visual reference only",
+      "accessibility": "Full keyboard navigation with a visible focus ring. ARIA roles/labels for screen readers. Prefers-reduced-motion fallback that disables non-essential animation. Sufficient colour contrast (WCAG AA). Escape-to-dismiss and a focus trap for the form overlay.",
+      "responsive_behavior": "At sm, the card is smaller with single-column layout. At md, it expands to two columns. At lg, it maintains the two-column layout with more padding.",
+      "acceptance_criteria": [
+        "The glow-card expands smoothly on viewport entry using Framer Motion's layoutId.",
+        "Inline form validation displays error messages in high-contrast text as users type.",
+        "Valid entries trigger seamless transitions between cards using layoutId.",
+        "Invalid entries display ARIA-labeled alerts and prevent form submission.",
+        "Escape-to-dismiss and focus trap work correctly for the form overlay."
+      ]
+    },
+    "spec_model": "qwen2.5-coder:14b",
+    "spec_at": "2026-05-29T17:44:36.110701+02:00"
+  },
+  {
+    "id": "00800",
+    "category": "background_effect",
+    "subject": "scroll_progress_bar",
+    "style": "warm_analog_film_grain",
+    "topic": "Drift — async voice notes for product teams",
+    "animation": "kinetic looping marquee with infinite-scroll seam blending",
+    "prompt": "Build a scroll progress bar for Drift’s async voice notes interface, combining cinematic visuals with clear UI function. The bar must show an explicit empty state when no data is available, then display a kinetic looping marquee with infinite-scroll seam blending driven by useAnimationFrame, creating a seamless, continuously looping effect. Implement the 21st.dev animated-marquee pattern locally using React, TypeScript, Tailwind, and Framer Motion, ensuring no undocumented imports. Ensure accessibility with keyboard navigation, visible focus rings, ARIA labels for screen readers, and a prefers-reduced-motion fallback that disables non-essential animation. Use soft serif typography and sepia tones to maintain the analog aesthetic while reinforcing usability.",
+    "model": "phi4:14b",
+    "generated_at": "2026-05-28T01:23:00.286622+02:00",
+    "prompt_v1": "Build a scroll_progress_bar as a decorative background for Drift's async voice notes interface, embodying the essence of warm_analog_film_grain visuals. Visualize a layered cinematic scene using depth and subtle lighting that mimics the texture of film grain over a kinetic looping marquee effect created with seamless infinite-scroll blending. Animate it using Framer Motion APIs like useScroll, useTransform for scroll-triggered motion, stagger for sequential element visibility, and variants to define animation states; integrate these animations within a 21st.dev Marquees component category for synchronized scrolling behavior. Employ typography that echoes warmth through soft serif fonts and a color palette rooted in rich sepia tones, reflecting the analog theme. Set the animation to activate on scroll, creating an engaging visual as users navigate through voice notes with smooth motion continuity.",
+    "refine_model": "mistral-small3.2:latest",
+    "refined_at": "2026-05-28T09:50:23.308450+02:00",
+    "prompt_v2": "Build a scroll-progress bar as a decorative background for Drift's async voice notes interface, evoking the tactile warmth of film grain through layered cinematic textures. Design a kinetic looping marquee with infinite-scroll blending that mimics the depth and subtle lighting of analog film stocks. Animate it using the useScroll, useTransform, stagger, and variants APIs for scroll-triggered motion, integrating these animations within the 21st.dev Marquees component category. Choose soft serif typography and sepia-toned colors to reinforce the analog aesthetic. Trigger the animation on scroll, creating a visual rhythm that accompanies voice notes with precise motion continuity.",
+    "functional_requirement": "an explicit empty / zero-data state",
+    "prose_model": "mistral-small3.2:latest",
+    "enriched_at": "2026-05-29T17:29:45.077943+02:00",
+    "spec": {
+      "file": "components/ScrollProgressBar.tsx",
+      "component_contract": "ScrollProgressBar(props: { dataAvailable: boolean }) => JSX.Element",
+      "states": [
+        "isDataAvailable: boolean",
+        "scrollPosition: number"
+      ],
+      "interaction_trigger": "viewport-enter",
+      "implementation_rules": "implement locally; no undocumented or external component imports; 21st.dev used as visual reference only",
+      "accessibility": "Full keyboard navigation with a visible focus ring. ARIA roles/labels for screen readers. Prefers-reduced-motion fallback that disables non-essential animation. Sufficient colour contrast (WCAG AA).",
+      "responsive_behavior": "At sm and md sizes, the bar remains centered with reduced padding. At lg size, it expands to full width with increased padding.",
+      "acceptance_criteria": [
+        "The progress bar displays an explicit empty state when no data is available.",
+        "When data is available, a kinetic looping marquee effect is displayed using useAnimationFrame.",
+        "The component adheres to accessibility guidelines, including keyboard navigation and ARIA labels.",
+        "The prefers-reduced-motion media query disables non-essential animations for users with motion sensitivity.",
+        "The bar maintains the analog aesthetic with soft serif typography and sepia tones."
+      ]
+    },
+    "spec_model": "qwen2.5-coder:14b",
+    "spec_at": "2026-05-29T17:45:20.712593+02:00"
+  },
+  {
+    "id": "00850",
+    "category": "micro_interaction",
+    "subject": "gesture_swipe_card",
+    "style": "neon_synthwave_grid",
+    "topic": "Halo — a privacy-first password manager",
+    "animation": "stagger reveal of children with spring physics on viewport enter",
+    "prompt": "Direct Halo’s gesture swipe card, a sleek UI component for a privacy-first password manager, with inline form validation that delivers accessible error messages as users interact. The card reveals a grid of shifting neon synthwave particles, animated with Framer Motion’s staggerChildren and useSpring physics on viewport entry via useInView, driving a staggered reveal of children with springy motion. Keyboard navigation includes a visible focus ring, ARIA roles and labels ensure screen reader compatibility, and a prefers-reduced-motion fallback disables non-essential animations, while sufficient color contrast maintains readability. The 21st.dev animated-button pattern must be implemented locally in React, TypeScript, Tailwind, and Framer Motion, used only as a visual reference without undocumented imports. On swipe interaction, the card’s children burst into view with depth-driven particle glows, set against bold sans-serif typography in electric pinks and blues.",
+    "model": "phi4:14b",
+    "generated_at": "2026-05-28T01:37:09.044760+02:00",
+    "prompt_v1": "Create a gesture_swipe_card micro-interaction pattern for Halo, showcasing its privacy-first password manager features. Implement a neon synthwave grid visual style with dynamic depth layering and soft particle effects casting ambient light across card surfaces. Utilize Framer Motion's stagger reveal of children with spring physics triggered by viewport enter. Incorporate the 21st.dev sparkles component category to enhance interactivity, combined with hover-borders for added engagement. Apply typography using bold sans-serif fonts paired with a vibrant palette dominated by neon pinks and blues. Ensure animation is triggered when users swipe cards into view upon entering the viewport, using useAnimate and stagger APIs for smooth transitions.",
+    "refine_model": "mistral-small3.2:latest",
+    "refined_at": "2026-05-28T10:18:03.528629+02:00",
+    "prompt_v2": "Direct Halo’s gesture-swipe card into motion, revealing its privacy-first password manager through a neon synthwave grid alive with shifting depth and soft particle glows. Let Framer Motion’s stagger and spring physics animate the card children, bursting into view as users scroll. Sprinkle 21st.dev’s sparkles and hover-borders to invite interaction, all set against bold sans-serif typography and electric pinks and blues. Trigger the animation as users swipe cards into the viewport, with useAnimate and stagger orchestrating the motion.",
+    "functional_requirement": "inline form validation with accessible error messages",
+    "prose_model": "mistral-small3.2:latest",
+    "enriched_at": "2026-05-29T17:30:44.482266+02:00",
+    "spec": {
+      "file": "components/DirectHaloGestureSwipeCard.tsx",
+      "component_contract": "DirectHaloGestureSwipeCard(props: DirectHaloGestureSwipeCardProps)",
+      "states": [
+        "isInView: boolean",
+        "showChildren: boolean"
+      ],
+      "interaction_trigger": "viewport-enter",
+      "implementation_rules": "implement locally; no undocumented or external component imports; 21st.dev used as visual reference only",
+      "accessibility": "Full keyboard navigation with a visible focus ring. ARIA roles/labels for screen readers. Prefers-reduced-motion fallback that disables non-essential animation. Sufficient colour contrast (WCAG AA). Escape-to-dismiss and a focus trap for overlay/dialog/menu components.",
+      "responsive_behavior": "Adapts to sm, md, lg breakpoints with responsive grid layout and typography adjustments.",
+      "acceptance_criteria": [
+        "The card reveals neon synthwave particles on viewport entry with springy motion.",
+        "Inline form validation delivers accessible error messages as users interact.",
+        "Keyboard navigation includes a visible focus ring.",
+        "ARIA roles and labels ensure screen reader compatibility.",
+        "Sufficient color contrast maintains readability."
+      ]
+    },
+    "spec_model": "qwen2.5-coder:14b",
+    "spec_at": "2026-05-29T17:46:02.042053+02:00"
+  },
+  {
+    "id": "00900",
+    "category": "page_section",
+    "subject": "before_after_slider",
+    "style": "iridescent_pearl",
+    "topic": "Pulse — developer analytics dashboard",
+    "animation": "AnimatePresence morph between two states triggered by hover",
+    "prompt": "Build a before-after slider component for Pulse's developer analytics dashboard, wrapped in an iridescent pearl aesthetic. The slider must feature an explicit empty state when no data is available, with clear visual indicators and ARIA labels for screen readers. On interaction, animatePresence morphs between two states triggered by hover, using layoutId to anchor elements and useSpring to add a tactile bounce, while staggerChildren creates a cinematic depth effect. Implement 21st.dev's hover-borders pattern locally with React, TypeScript, Tailwind, and Framer Motion as a visual reference, ensuring keyboard navigation with a visible focus ring and sufficient color contrast. The animation respects prefers-reduced-motion, disabling non-essential motion when enabled, while the slider's core functionality remains accessible via keyboard and screen reader.",
+    "model": "phi4:14b",
+    "generated_at": "2026-05-28T01:50:43.354209+02:00",
+    "prompt_v1": "Build a before_and_after_slider section to showcase Pulse's developer analytics dashboard, utilizing an iridescent_pearl visual style. Create a 3D cinematic experience with depth layering and dynamic lighting that captures attention as users interact; use AnimatePresence to morph between two states on hover. Employ Framer Motion APIs such as AnimatePresence for seamless transitions, layoutId for consistent element tracking, and useSpring for smooth animations. Incorporate hover-borders from 21st.dev to accentuate the slider’s interactive edges when triggered by user hover. Maintain a harmonious typography and color scheme that complements iridescent tones with soft gradients and elegant font pairings. Ensure the animation is activated specifically upon mouse hover, enhancing the engagement of users exploring the analytics dashboard features.",
+    "refine_model": "mistral-small3.2:latest",
+    "refined_at": "2026-05-28T10:45:00.627170+02:00",
+    "prompt_v2": "Spin a before_and_after_slider section to display Pulse's developer analytics dashboard, wrapping it in an iridescent pearl aesthetic. Craft a 3D cinematic effect with staggered depth planes and shifting light reflections that draw the eye as users glide their cursors over the content. Use AnimatePresence to fluidly transform between states on hover, while layoutId keeps elements anchored and useSpring adds a tactile bounce to movements. Frame the slider with 21st.dev's hover-borders that subtly pulse at the edges when triggered by mouse interaction. Blend typography and colors that mirror the pearl's luster, using gradient washes and refined type pairings to complete the polished look. The animation responds exclusively to hover, inviting closer inspection of the analytics features.",
+    "functional_requirement": "an explicit empty / zero-data state",
+    "prose_model": "mistral-small3.2:latest",
+    "enriched_at": "2026-05-29T17:31:38.543496+02:00",
+    "spec": {
+      "file": "components/BeforeAfterSlider.tsx",
+      "component_contract": "export const BeforeAfterSlider: React.FC<BeforeAfterSliderProps>",
+      "states": [
+        "isHovered: boolean",
+        "isEmptyStateVisible: boolean"
+      ],
+      "interaction_trigger": "hover",
+      "implementation_rules": "implement locally; no undocumented or external component imports; 21st.dev used as visual reference only",
+      "accessibility": "Full keyboard navigation with a visible focus ring. ARIA roles/labels for screen readers. Prefers-reduced-motion fallback that disables non-essential animation. Sufficient colour contrast (WCAG AA). No overlay/dialog/menu, so no Escape-to-dismiss or focus trap required.",
+      "responsive_behavior": "At sm: slider is full-width with reduced padding; at md: maintains aspect ratio but slightly larger; at lg: standard size with extra padding and detail.",
+      "acceptance_criteria": [
+        "The component displays an empty state with clear visual indicators when no data is available.",
+        "Hovering over the slider triggers a smooth transition between two states using layoutId and useSpring, with staggerChildren for cinematic depth.",
+        "Keyboard navigation is fully supported, with a visible focus ring on interactive elements.",
+        "ARIA roles/labels are correctly applied to ensure screen reader accessibility.",
+        "The animation respects prefers-reduced-motion, disabling non-essential motion when enabled."
+      ]
+    },
+    "spec_model": "qwen2.5-coder:14b",
+    "spec_at": "2026-05-29T17:46:49.006674+02:00"
+  },
+  {
+    "id": "00950",
+    "category": "page_section",
+    "subject": "team_grid",
+    "style": "ascii_terminal_3d",
+    "topic": "Neura — an AI productivity assistant",
+    "animation": "scroll-snap sections with camera-FOV change on each snap",
+    "prompt": "Direct Neura’s team grid with a 3D terminal aesthetic, blending cinematic camera shifts and concrete UI function. Implement scroll-snap sections using Framer Motion’s useScroll API, adjusting the field of view on each snap to create dynamic perspective changes. Structure the grid using the 21st.dev bento layout pattern locally in React, TypeScript, Tailwind, and Framer Motion, ensuring inline form validation with accessible error messages for data entry. Users will see profile cards with monospaced typography and shadow casting, interacting via keyboard navigation with visible focus rings and ARIA labels for screen readers. Include a prefers-reduced-motion fallback to disable non-essential animations, maintaining sufficient color contrast throughout.",
+    "model": "phi4:14b",
+    "generated_at": "2026-05-28T02:04:46.112689+02:00",
+    "prompt_v1": "Construct a dynamic team_grid page section for Neura—an AI productivity assistant—embodying an ascii_terminal_3d visual style that captures a 3D terminal aesthetic. Employ cinematic camera movements, such as altering the field of view (FOV) with each scroll snap to reveal layers of depth and create a sense of immersion. Use Framer Motion's useScroll and layoutId APIs for smooth scrolling animations and consistent rendering across component states. Integrate this section using 21st.dev’s bento grids to add structure, while applying the typography styles of monospaced fonts with subtle shadows to enhance readability against a muted digital color palette reminiscent of classic terminal interfaces. Ensure that as users scroll through sections, their viewport interactions trigger transformations in lighting and perspective, creating an engaging experience that highlights each team member's profile.",
+    "refine_model": "mistral-small3.2:latest",
+    "refined_at": "2026-05-28T11:12:01.258757+02:00",
+    "prompt_v2": "Bind layers of depth in a 3D terminal aesthetic for Neura’s team grid, pulsing with cinematic camera shifts. Alter the field of view via Framer Motion’s useScroll API at each scroll snap, while layoutId ensures fluid state transitions. Structure the grid with 21st.dev’s bento layouts, then render monospaced typography with shadow casts for crisp readability against muted terminal tones. Scroll-triggered viewport interactions should warp lighting angles and perspective, spotlighting each profile in turn.",
+    "functional_requirement": "inline form validation with accessible error messages",
+    "prose_model": "mistral-small3.2:latest",
+    "enriched_at": "2026-05-29T17:32:27.981077+02:00",
+    "spec": {
+      "file": "components/NeuraTeamGrid.tsx",
+      "component_contract": "NeuraTeamGrid(props: { members: Member[] }) => JSX.Element",
+      "states": [
+        "currentSnapIndex: number",
+        "isAnimating: boolean"
+      ],
+      "interaction_trigger": "scroll",
+      "implementation_rules": "Implement locally; no undocumented or external component imports; 21st.dev used as visual reference only.",
+      "accessibility": "Full keyboard navigation with a visible focus ring, ARIA roles/labels for screen readers, prefers-reduced-motion fallback that disables non-essential animation, sufficient color contrast (WCAG AA).",
+      "responsive_behavior": "At sm: grid layout adapts to single column; at md: two columns; at lg: three columns.",
+      "acceptance_criteria": [
+        "Scroll-snap sections work correctly with dynamic perspective changes on each snap.",
+        "Profile cards display monospaced typography and shadow casting, with visible focus rings on keyboard navigation.",
+        "Inline form validation is implemented with accessible error messages for data entry.",
+        "Component adheres to WCAG AA color contrast standards.",
+        "Prefers-reduced-motion users have non-essential animations disabled."
+      ]
+    },
+    "spec_model": "qwen2.5-coder:14b",
+    "spec_at": "2026-05-29T17:47:27.472636+02:00"
+  }
+]
