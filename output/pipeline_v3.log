@@ -1085,3 +1085,112 @@
 [prose] 988/1000 rate=0.02/s eta=9.0m
 [prose] 989/1000 rate=0.02/s eta=8.3m
 [prose] 990/1000 rate=0.02/s eta=7.5m
+[prose] 991/1000 rate=0.02/s eta=6.7m
+[prose] 992/1000 rate=0.02/s eta=5.9m
+[prose] 993/1000 rate=0.02/s eta=5.2m
+[prose] 994/1000 rate=0.02/s eta=4.4m
+[prose] 995/1000 rate=0.02/s eta=3.7m
+[prose] 996/1000 rate=0.02/s eta=2.9m
+[prose] 997/1000 rate=0.02/s eta=2.2m
+[prose] 998/1000 rate=0.02/s eta=1.5m
+[prose] 999/1000 rate=0.02/s eta=0.7m
+[prose] 1000/1000 rate=0.02/s eta=0.0m
+[prose] done, 1000 total
+
+============ v3 pipeline started 2026-05-29T13:39:07+02:00 ============
+------ clean.py (v2 -> v2_clean) ------
+{
+  "records": 1000,
+  "hook_fixes": 57,
+  "backticks_removed": 892,
+  "product_typos_fixed": 3,
+  "product_still_missing": 38,
+  "missing_examples": [
+    {
+      "id": "00023",
+      "product": "Forge"
+    },
+    {
+      "id": "00042",
+      "product": "Forge"
+    },
+    {
+      "id": "00079",
+      "product": "Pulse"
+    },
+    {
+      "id": "00143",
+      "product": "Forge"
+    },
+    {
+      "id": "00152",
+      "product": "Quill"
+    },
+    {
+      "id": "00166",
+      "product": "Forge"
+    },
+    {
+      "id": "00182",
+      "product": "Pulse"
+    },
+    {
+      "id": "00263",
+      "product": "Atlas"
+    },
+    {
+      "id": "00308",
+      "product": "Forge"
+    },
+    {
+      "id": "00321",
+      "product": "Nimbus"
+    },
+    {
+      "id": "00348",
+      "product": "Forge"
+    },
+    {
+      "id": "00350",
+      "product": "Quill"
+    },
+    {
+      "id": "00352",
+      "product": "Pulse"
+    },
+    {
+      "id": "00366",
+      "product": "Quill"
+    },
+    {
+      "id": "00428",
+      "product": "Orbit"
+    },
+    {
+      "id": "00466",
+      "product": "Pulse"
+    },
+    {
+      "id": "00467",
+      "product": "Orbit"
+    },
+    {
+      "id": "00470",
+      "product": "Pulse"
+    },
+    {
+      "id": "00533",
+      "product": "Pulse"
+    },
+    {
+      "id": "00556",
+      "product": "Atlas"
+    }
+  ]
+}
+------ enrich_prose.py (mistral-small3.2) ------
+[prose] model=mistral-small3.2:latest total=1000 done=1000
+[prose] done, 1000 total
+------ enrich_spec.py (qwen2.5-coder:14b) ------
+[spec] model=qwen2.5-coder:14b total=1000 done=0
+[spec] 1/1000 rate=0.02/s eta=735.7m
