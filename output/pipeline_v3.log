@@ -1061,3 +1061,23 @@
 [prose] 967/1000 rate=0.02/s eta=24.7m
 [prose] 968/1000 rate=0.02/s eta=24.0m
                                        
+============ prose RESUME (32 left) started 2026-05-29T13:15:57+02:00 ============
+[prose] model=mistral-small3.2:latest total=1000 done=968
+[prose] 969/1000 rate=0.02/s eta=29.2m
+[prose] 970/1000 rate=0.02/s eta=23.6m
+[prose] 971/1000 rate=0.02/s eta=22.8m
+[prose] 972/1000 rate=0.02/s eta=21.0m
+[prose] 973/1000 rate=0.02/s eta=20.0m
+[prose] 974/1000 rate=0.02/s eta=19.5m
+[prose] 975/1000 rate=0.02/s eta=18.6m
+[prose] 976/1000 rate=0.02/s eta=18.0m
+[prose] 977/1000 rate=0.02/s eta=17.2m
+[prose] 978/1000 rate=0.02/s eta=16.8m
+[prose] 979/1000 rate=0.02/s eta=16.1m
+[prose] 980/1000 rate=0.02/s eta=15.2m
+[prose] 981/1000 rate=0.02/s eta=14.4m
+[prose] 982/1000 rate=0.02/s eta=13.5m
+[prose] 983/1000 rate=0.02/s eta=12.7m
+[prose] 984/1000 rate=0.02/s eta=12.0m
+[prose] 985/1000 rate=0.02/s eta=11.2m
+[prose] 986/1000 rate=0.02/s eta=10.5m

@@ -1,6 +1,7 @@
 # Ephemeral runtime files
 output/generate.pid
 output/*.old
+output/*.bak*
 
 # Editor / OS noise
 .DS_Store
