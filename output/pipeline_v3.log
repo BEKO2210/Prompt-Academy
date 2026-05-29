@@ -1579,3 +1579,13 @@
 [prose] 3/1000 rate=0.01/s eta=1141.3m
 [prose] 4/1000 rate=0.02/s eta=1072.1m
 [prose] 5/1000 rate=0.02/s eta=1043.3m
+[prose] 6/1000 rate=0.02/s eta=1043.4m
+[2026-05-29T18:01:13+02:00] another v3 pipeline holds the lock; exiting
+[prose] 7/1000 rate=0.02/s eta=1035.1m
+[prose] 8/1000 rate=0.02/s eta=1042.6m
+[prose] 9/1000 rate=0.02/s eta=1042.0m
+[prose] 10/1000 rate=0.02/s eta=1060.1m
+[prose] 11/1000 rate=0.02/s eta=1066.1m
+[prose] 12/1000 rate=0.02/s eta=1062.1m
+[prose] 13/1000 rate=0.02/s eta=1067.8m
+[prose] 14/1000 rate=0.02/s eta=1079.8m
