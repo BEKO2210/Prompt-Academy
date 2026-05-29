@@ -12,3 +12,6 @@ __pycache__/
 
 # Lock for the auto-pusher (created by commit-push.sh)
 .git/auto-push.lock
+
+# Pre-rerun archive of old (imperfect) v3 outputs
+output/.archive/

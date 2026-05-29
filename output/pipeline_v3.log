@@ -1560,3 +1560,22 @@
 [spec] 365/1000 rate=0.03/s eta=357.8m
 [spec] 366/1000 rate=0.03/s eta=357.2m
 [spec] 367/1000 rate=0.03/s eta=356.8m
+
+============ v3 pipeline started 2026-05-29T17:54:04+02:00 ============
+------ clean.py (v2 -> v2_clean) ------
+{
+  "records": 1000,
+  "hook_fixes": 57,
+  "backticks_removed": 892,
+  "product_typos_fixed": 41,
+  "twentyfirst_safety_normalized": 986,
+  "product_still_missing": 0,
+  "missing_examples": []
+}
+------ enrich_prose.py (mistral-small3.2) ------
+[prose] model=mistral-small3.2:latest total=1000 done=0
+[prose] 1/1000 rate=0.01/s eta=1597.1m
+[prose] 2/1000 rate=0.01/s eta=1331.1m
+[prose] 3/1000 rate=0.01/s eta=1141.3m
+[prose] 4/1000 rate=0.02/s eta=1072.1m
+[prose] 5/1000 rate=0.02/s eta=1043.3m
